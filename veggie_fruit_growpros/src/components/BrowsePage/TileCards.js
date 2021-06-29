@@ -8,24 +8,22 @@ const TileCards = ({sortCardState}) => {
 
   class Vegetables{
     constructor(id,title,difficulty,space,indoors,time,img){
-      this.title=title;
-
-      this.difficulty=difficulty;
-      this.space=space;
-      this.indoors=indoors;
-      this.time=time;
-      this.id=id;
-      this.img=img;
+      this.title = title;
+      this.difficulty = difficulty;
+      this.space = space;
+      this.indoors = indoors;
+      this.time = time;
+      this.id = id;
+      this.img = img;
 
       this.leaf=leaf;
     }
 
-    
-
     makeCard(){
       let DifficultyLeafImage;
       let TimeLeafImage;
-      let SpaceLeafImage
+      let SpaceLeafImage;
+      
       
       if(this.difficulty===1){DifficultyLeafImage=leaf}
       if(this.difficulty===2){DifficultyLeafImage=leaf2}
@@ -38,18 +36,19 @@ const TileCards = ({sortCardState}) => {
       if(this.space===1){SpaceLeafImage=leaf}
       if(this.space===2){SpaceLeafImage=leaf2}
       if(this.space===3){SpaceLeafImage=leaf3}
-
+      
       return(
       <div className="Cardbox__centreScreen--allCards" key={this.id}>
-        <img src={this.img} alt="" srcSet="" />
+        <img src={this.img} alt="fruit/veg" className="mainImage"/>
         <h1>{this.title}</h1>
-        <div className="leafContainer">
-          <h6>Difficulty</h6>
-          <h6>Time</h6>
-          <h6>Space</h6>
-          <h6><img src={DifficultyLeafImage} alt="" srcset="" className="leafimage"/></h6>
-          <h6><img src={TimeLeafImage} alt="" srcset="" className="leafimage"/></h6>
-          <h6><img src={SpaceLeafImage} alt="" srcset="" className="leafimage"/></h6>
+        <div className="Cardbox__centreScreen--allCards--leafContainer">
+          <h6 className="leafBox-h6">Difficulty</h6>
+          <h6 className="leafBox-h6">Space</h6>
+          <h6 className="leafBox-h6">Time</h6>
+          <h6 className="leafBox-h6"><img src={DifficultyLeafImage} alt="" srcSet="" className="leafimage"/></h6>
+          <h6 className="leafBox-h6"><img src={SpaceLeafImage} alt="" srcSet="" className="leafimage"/></h6>
+          <h6 className="leafBox-h6"><img src={TimeLeafImage} alt="" srcSet="" className="leafimage"/></h6>
+
           
         </div>
       </div>
@@ -63,21 +62,21 @@ const TileCards = ({sortCardState}) => {
 
 
 
-  // veg //============= id,title,difficulty,space,indoors,time,mainImg
-let Potato=new Vegetables("id0","Potato",3,2,false,"3hours",potato)
+  // veg //============= ====difficulty,space,indoors, time, main Image
+let Potato=new Vegetables("id0","Potato",3,2,true,"3hours",potato)
 let Tomato=new Vegetables("id1","Tomato",1,2,true,"3hours",randomfruit)
-let Carrot=new Vegetables("id2","Carrot",1,2,false,"3hours",randomfruit)
-let Onion =new Vegetables("id3","Onion",1,2,false,"3hours",randomfruit)
+let Carrot=new Vegetables("id2","Carrot",1,2,true,"3hours",randomfruit)
+let Onion =new Vegetables("id3","Onion",1,2,true,"3hours",randomfruit)
 // Fruits
-let Strawberry=new Vegetables("id4","Strawberry",1,2,false,"3hours",randomfruit)
+let Strawberry=new Vegetables("id4","Strawberry",1,2,true,"3hours",randomfruit)
 let Blueberry=new Vegetables("id5","Blueberry",2,2,true,"3hours",randomfruit)
 let Raspberry=new Vegetables("id6","Raspberry",3,2,true,"3hours",randomfruit)
 let Lime=new Vegetables("id7","Lime",2,2,true,"3hours",randomfruit)
 // Herbs
-let Basil=new Vegetables("id8","Basil",2,2,true,"3hours",randomfruit)
-let Mint=new Vegetables("id9","Mint",3,2,true,"3hours",randomfruit)
-let Parsley=new Vegetables("id10","Parsley",1,2,true,"3hours",randomfruit)
-let Dill=new Vegetables("id11","Dill",1,2,true,"3hours",randomfruit)
+let Basil=new Vegetables("id8","Basil",2,2,false,"3hours",randomfruit)
+let Mint=new Vegetables("id9","Mint",3,2,false,"3hours",randomfruit)
+let Parsley=new Vegetables("id10","Parsley",1,2,false,"3hours",randomfruit)
+let Dill=new Vegetables("id11","Dill",1,2,false,"3hours",randomfruit)
 // above is the layout of cards
 
 let ArrayOfFruitAndVeg = [
@@ -145,14 +144,12 @@ if(sortCardState === "default"){
 if(sortCardState === "indoors"){
   SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Indoors</h1>)
    ArrayOfFruitAndVeg.filter((item)=>{
-     console.log(item)
     return item.indoors === true?SortedArray.push(item.makeCard()):<></>
   })
 }
 if(sortCardState === "indoors"){
   SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Outdoors</h1>)
    ArrayOfFruitAndVeg.filter((item)=>{
-     console.log(item)
     return item.indoors !== true?SortedArray.push(item.makeCard()):<></>
   })
 }
@@ -179,7 +176,6 @@ if(sortCardState === "difficulty"){
  })
  NewArray.forEach((item)=>{
    SortedArray.push(item.makeCard())
-   console.log(item.makeCard())
  })
  
 }
