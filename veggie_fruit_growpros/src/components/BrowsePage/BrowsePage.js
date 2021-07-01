@@ -9,9 +9,21 @@ const BrowsePage = () => {
   return ( 
     <>
     <div className="BrowsePage">
-        <button onClick={()=>setSortCardState("default")}>default</button>
-        <button onClick={()=>setSortCardState("difficulty")}>difficulty</button>
-        <button onClick={()=>setSortCardState("indoors")}>indoors</button>
+
+
+
+      <div class="filterDropdown">
+        <button class="filterDropdown--btn">Dropdown</button>
+        <div class="filterDropdown-content">
+          <button onClick={()=>setSortCardState("default")}>default</button>
+          <button onClick={()=>setSortCardState("difficulty")}>difficulty</button>
+          <button onClick={()=>setSortCardState("indoors")}>indoors</button>
+        </div>
+      </div>
+        
+        
+        
+
         
       <div className="CardContainer">
         <TileCards sortCardState={sortCardState}/>
