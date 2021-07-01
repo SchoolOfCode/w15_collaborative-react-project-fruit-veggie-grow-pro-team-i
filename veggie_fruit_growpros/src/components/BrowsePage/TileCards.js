@@ -1,8 +1,19 @@
-import randomfruit from "../images/randomfruit.png";
+
 import leaf from "../images/leaf.png"
 import leaf2 from "../images/leaf2.png"
 import leaf3 from "../images/leaf3.png"
-import potato from "../images/potato.png"
+import potatoes from "../images/potatoes.jpg"
+import tomatoimgs from "../images/tomatoimgs.jpg"
+import carrots from "../images/carrots.jpg"
+import onions from "../images/onions.jpg"
+import strawberries from "../images/strawberries.jpg"
+import blueberry from "../images/blueberry.jpg"
+import raspberries from "../images/raspberries.jpg"
+import lime from "../images/lime.jpg"
+import basil from "../images/basil.jpg"
+import mint from "../images/mint.jpg"
+import parsley from "../images/parsley.jpg"
+import dill from "../images/dill.jpg"
 
 const TileCards = ({sortCardState}) => {
 
@@ -29,18 +40,18 @@ const TileCards = ({sortCardState}) => {
       if(this.difficulty===2){DifficultyLeafImage=leaf2}
       if(this.difficulty===3){DifficultyLeafImage=leaf3}
 
-      if(this.time==="1hours"){TimeLeafImage=leaf}
-      if(this.time==="2hours"){TimeLeafImage=leaf2}
-      if(this.time==="3hours"){TimeLeafImage=leaf3}
+      if(this.time===1){TimeLeafImage=leaf}
+      if(this.time===2){TimeLeafImage=leaf2}
+      if(this.time===3){TimeLeafImage=leaf3}
 
       if(this.space===1){SpaceLeafImage=leaf}
       if(this.space===2){SpaceLeafImage=leaf2}
       if(this.space===3){SpaceLeafImage=leaf3}
       
       return(
-      <div className="Cardbox__centreScreen--allCards" key={this.id}>
+      <div className="Cardbox__centreScreen--allCards" >
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
-        <h1>{this.title}</h1>
+        <h1 className="CardTitle" >{this.title}</h1>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
           <h6 className="leafBox-h6">Difficulty</h6>
           <h6 className="leafBox-h6">Space</h6>
@@ -61,22 +72,21 @@ const TileCards = ({sortCardState}) => {
 // deficulty = 1
 
 
-
-  // veg //============= ====difficulty,space,indoors, time, main Image
-let Potato=new Vegetables("id0","Potato",3,2,true,"3hours",potato)
-let Tomato=new Vegetables("id1","Tomato",1,2,true,"3hours",randomfruit)
-let Carrot=new Vegetables("id2","Carrot",1,2,true,"3hours",randomfruit)
-let Onion =new Vegetables("id3","Onion",1,2,true,"3hours",randomfruit)
+  // veg //============= ====title,difficulty,space,indoors, time, main Image
+let Potato=new Vegetables("id0","Potatoes",1,3,false,1,potatoes)
+let Tomato=new Vegetables("id1","Tomatoes",2,3,false,3,tomatoimgs)
+let Carrot=new Vegetables("id2","Carrot",2,3,false,3,carrots)
+let Onion =new Vegetables("id3","Onion",2,3,false,3,onions)
 // Fruits
-let Strawberry=new Vegetables("id4","Strawberry",1,2,true,"3hours",randomfruit)
-let Blueberry=new Vegetables("id5","Blueberry",2,2,true,"3hours",randomfruit)
-let Raspberry=new Vegetables("id6","Raspberry",3,2,true,"3hours",randomfruit)
-let Lime=new Vegetables("id7","Lime",2,2,true,"3hours",randomfruit)
+let Strawberry=new Vegetables("id4","Strawberries",1,2,true,2,strawberries)
+let Blueberry=new Vegetables("id5","Blueberries",2,2,true,2,blueberry)
+let Raspberry=new Vegetables("id6","Raspberries",1,2,true,2,raspberries)
+let Lime=new Vegetables("id7","Lime",1,2,true,3,lime)
 // Herbs
-let Basil=new Vegetables("id8","Basil",2,2,false,"3hours",randomfruit)
-let Mint=new Vegetables("id9","Mint",3,2,false,"3hours",randomfruit)
-let Parsley=new Vegetables("id10","Parsley",1,2,false,"3hours",randomfruit)
-let Dill=new Vegetables("id11","Dill",1,2,false,"3hours",randomfruit)
+let Basil=new Vegetables("id8","Basil",2,1,false,1,basil)
+let Mint=new Vegetables("id9","Mint",1,1,false,1,mint)
+let Parsley=new Vegetables("id10","Parsley",1,1,false,1,parsley)
+let Dill=new Vegetables("id11","Dill",1,1,false,1,dill)
 // above is the layout of cards
 
 let ArrayOfFruitAndVeg = [
@@ -119,7 +129,7 @@ if(sortCardState === "default"){
   let countUntillYouPlaceTheFoodTitle = 0 // this just tells when to put a title
   
   ArrayOfFruitAndVeg.forEach((item)=>{
-
+    console.log(item)
     if(countUntillYouPlaceTheFoodTitle===0){
       SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Vegetables</h1>)//<<<<<title here
     }
@@ -180,7 +190,44 @@ if(sortCardState === "difficulty"){
  
 }
 // sort through difficulty lowest to highest
+// ====================================== Difficulty============
+if(sortCardState === "space"){
+  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Space Required</h1>)
+  let NewArray = ArrayOfFruitAndVeg.sort((item,item2)=>{
+    if(item.space < item2.space){
+      return -1
+    }
+    else if(item.space > item2.space){
+      return 1
+    }else{
+      return 0
+    }
+ })
+ NewArray.forEach((item)=>{
+   SortedArray.push(item.makeCard())
+ })
+ 
+}
+// sort through space lowest to highest 
+// ====================================== Space ============
 
+if(sortCardState === "time"){
+  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Time Required</h1>)
+  let NewArray = ArrayOfFruitAndVeg.sort((item,item2)=>{
+    if(item.time < item2.time){
+      return -1
+    }
+    else if(item.time > item2.time){
+      return 1
+    }else{
+      return 0
+    }
+ })
+ NewArray.forEach((item)=>{
+   SortedArray.push(item.makeCard())
+ })
+ 
+}
 
   return ( 
     <section className="Cardbox__centreScreen">
