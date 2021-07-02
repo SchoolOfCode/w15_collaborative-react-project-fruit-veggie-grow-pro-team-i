@@ -230,10 +230,9 @@ if(sortCardState === "time"){
 }
 
   return ( 
-    <section className="Cardbox__centreScreen">
+    <>
       {SortedArray}
-
-    </section>
+    </>
    );
 }
  
