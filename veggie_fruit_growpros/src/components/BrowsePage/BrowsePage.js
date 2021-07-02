@@ -29,7 +29,7 @@ const BrowsePage = () => {
       </section>
 
         <div className="filterDropdown">{/*<<thats all the dropdown buttons  */}
-          <button className="filterDropdown--btn">Dropdown</button>
+          <button className="filterDropdown--btn">Sort </button>
           <div className="filterDropdown-content">
             <button onClick={()=>setSortCardState("default")}>default</button>
             <button onClick={()=>setSortCardState("difficulty")}>difficulty</button>
