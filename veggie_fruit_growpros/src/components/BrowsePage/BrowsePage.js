@@ -24,6 +24,10 @@ const BrowsePage = () => {
         
       <div className="CardContainer">{/*<<thats the cardContainer  */}
 
+      <section className="Cardbox__centreScreen">
+        <TileCards sortCardState={sortCardState}/> {/*<<thats all the cards  */}
+      </section>
+
         <div className="filterDropdown">{/*<<thats all the dropdown buttons  */}
           <button className="filterDropdown--btn">Dropdown</button>
           <div className="filterDropdown-content">
@@ -35,8 +39,7 @@ const BrowsePage = () => {
           </div>
         </div>
 
-
-        <TileCards sortCardState={sortCardState}/> {/*<<thats all the cards  */}
+      
 
       </div>
     
