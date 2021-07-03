@@ -1,5 +1,7 @@
 import { useState } from "react"
 import TileCards from "./TileCards"
+import NavBar from "../NavBar"
+import Hero from "../Hero"
 
 const BrowsePage = () => {
 
@@ -13,6 +15,7 @@ const BrowsePage = () => {
     <>
     <div className="BrowsePage">{/*<<thats the whole browse Page  */}
 
+    <Hero/>
       {/* add a header here */}
 
 
@@ -20,8 +23,7 @@ const BrowsePage = () => {
 
 
 
-      
-        
+  
       <div className="CardContainer">{/*<<thats the cardContainer  */}
 
       <section className="Cardbox__centreScreen">
