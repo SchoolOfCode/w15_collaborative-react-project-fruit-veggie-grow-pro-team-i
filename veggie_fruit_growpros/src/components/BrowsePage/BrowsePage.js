@@ -1,6 +1,5 @@
 import { useState } from "react"
 import TileCards from "./TileCards"
-import NavBar from "../NavBar"
 import Hero from "../Hero"
 
 const BrowsePage = () => {
