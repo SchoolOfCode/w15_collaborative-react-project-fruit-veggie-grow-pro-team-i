@@ -1,5 +1,38 @@
 .App {
   text-align: center;
 }
+.nav-bar{
+  height: 8vh;
+  width: 100vw;
+}
+
+.fix-nav{
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  display:flex;
+  height: 8vh;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-bottom: grey solid thin;
+  opacity: 0.9;
+}
+
+.nav-logo{
+  text-align: left;
+  padding-left: 40px;
+
+}
+
+.nav-container{
+  display: inline;
+  padding-right: 40px;
+}
+.nav-container-li{
+  display: inline;
+  margin: 10px;
+}
 
 
