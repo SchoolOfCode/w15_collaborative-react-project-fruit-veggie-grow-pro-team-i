@@ -15,7 +15,7 @@ import mint from "../images/mint.jpg"
 import parsley from "../images/parsley.jpg"
 import dill from "../images/dill.jpg"
 
-const TileCards = ({sortCardState,callConsoleLog}) => {
+const TileCards = ({sortCardState,popUpMenu}) => {
 
   class Vegetables{
     constructor(id,title,difficulty,space,indoors,time,img){
@@ -49,7 +49,7 @@ const TileCards = ({sortCardState,callConsoleLog}) => {
       if(this.space===3){SpaceLeafImage=leaf3}
       
       return(
-      <div className="Cardbox__centreScreen--allCards" onClick={()=>{callConsoleLog(this.id)}}>
+      <div key={this.id} className="Cardbox__centreScreen--allCards" onClick={()=>{popUpMenu(this.img,this.title)}}>
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
         <h1 className="CardTitle" >{this.title}</h1>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
