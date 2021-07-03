@@ -4,11 +4,16 @@
   text-decoration: none;
 }
 .BrowsePage{
-  width: 1200px;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
+}
+
+.hero-image{
+  width: 100vw;
+  height: 92vh;
 }
 
 .CardContainer{
