@@ -15,7 +15,7 @@ import mint from "../images/mint.jpg"
 import parsley from "../images/parsley.jpg"
 import dill from "../images/dill.jpg"
 
-const TileCards = ({sortCardState}) => {
+const TileCards = ({sortCardState,callConsoleLog}) => {
 
   class Vegetables{
     constructor(id,title,difficulty,space,indoors,time,img){
@@ -49,7 +49,7 @@ const TileCards = ({sortCardState}) => {
       if(this.space===3){SpaceLeafImage=leaf3}
       
       return(
-      <div className="Cardbox__centreScreen--allCards" >
+      <div className="Cardbox__centreScreen--allCards" onClick={()=>{callConsoleLog(this.id)}}>
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
         <h1 className="CardTitle" >{this.title}</h1>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
@@ -129,7 +129,7 @@ if(sortCardState === "default"){
   let countUntillYouPlaceTheFoodTitle = 0 // this just tells when to put a title
   
   ArrayOfFruitAndVeg.forEach((item)=>{
-    console.log(item)
+    
     if(countUntillYouPlaceTheFoodTitle===0){
       SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Vegetables</h1>)//<<<<<title here
     }

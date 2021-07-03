@@ -5,6 +5,10 @@ const BrowsePage = () => {
 
 
   // THIS IS WHERE WE WILL BE WORKING for BrowsePage
+  function callConsoleLog(prop){
+    console.log(prop)
+    
+  }
 
 
   let [sortCardState,setSortCardState] = useState("default")
@@ -25,7 +29,7 @@ const BrowsePage = () => {
       <div className="CardContainer">{/*<<thats the cardContainer  */}
 
       <section className="Cardbox__centreScreen">
-        <TileCards sortCardState={sortCardState}/> {/*<<thats all the cards  */}
+        <TileCards callConsoleLog={callConsoleLog} sortCardState={sortCardState}/> {/*<<thats all the cards  */}
       </section>
 
         <div className="filterDropdown">{/*<<thats all the dropdown buttons  */}
