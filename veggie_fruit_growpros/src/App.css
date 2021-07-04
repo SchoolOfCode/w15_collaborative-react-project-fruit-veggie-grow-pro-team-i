@@ -1,44 +1,11 @@
+html {
+  background: rgb(49, 49, 49);
+}
+
 .App {
   text-align: center;
-}
-.nav-bar{
-  height: 10vh;
-  width: 90vw;
-}
-
-.fix-nav{
-  position: fixed;
-  align-items: center;
-  justify-content: space-between;
-  display:flex;
-  height: 10vh;
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
   background-color: white;
-  border-bottom: grey solid thin;
-  opacity: 0.9;
-}
-
-.color-border{
-  position: fixed;
-  height: 4px;
-  width: 100vw;
-  background: linear-gradient(to right,rgb(9, 255, 0), rgb(0, 26, 255));
-}
-
-.nav-logo{
-  text-align: left;
-  padding-left: 40px;
-}
-
-.nav-container{
-  display: inline;
-  padding-right: 40px;
-}
-.nav-container-li{
-  display: inline;
-  margin: 20px;
 }
 
 

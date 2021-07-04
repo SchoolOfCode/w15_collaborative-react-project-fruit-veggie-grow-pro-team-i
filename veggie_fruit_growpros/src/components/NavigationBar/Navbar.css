@@ -1,0 +1,52 @@
+.NavbarItems {
+    position: fixed;
+    background-color: rgb(49, 49, 49);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.color-border{
+    position: fixed;
+    vertical-align: top;
+    height: 0.4vh;
+    width: 100vw;
+    background: linear-gradient(to  right,rgb(3, 200, 3),#c8d600 41.07%,#61cbd4 76.05%);
+    z-index: 2;
+}
+
+.navbar-logo {
+    color: whitesmoke;
+    justify-self: start;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    margin-left: 0.2rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+    list-style: none;
+    text-align: center;
+    width: 30vw;
+    justify-content: end;
+    margin-right: 3rem;
+}
+
+.nav-links {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+

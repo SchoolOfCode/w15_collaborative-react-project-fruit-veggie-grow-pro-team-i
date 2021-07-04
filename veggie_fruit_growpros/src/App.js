@@ -1,9 +1,8 @@
-
 import BrowsePage from './components/BrowsePage/BrowsePage';
 
 import "./components/BrowsePage/BrowsePage.css"
 import './App.css';
-import NavBar from './components/NavBar';
+import Navbar from './components/NavigationBar/Navbar';
 
 function App() {
 
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="App">
 
-      <NavBar/>
+      <Navbar/>
       <BrowsePage/>
       {/* add a questionairePage here */}
       {/* add a LandingPage here*/}
