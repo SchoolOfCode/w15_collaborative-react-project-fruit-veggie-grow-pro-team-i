@@ -4,6 +4,7 @@ import PopUp from "./popup/PopUp"
 import Hero from "../Hero"
 import NavBar from '../NavBar';
 import SortButtons from "./SortButtons";
+import Footer from "../Footer";
 
 
 const BrowsePage = () => {
@@ -33,7 +34,8 @@ const BrowsePage = () => {
         <SortButtons setSortCardState={setSortCardState}/>
       
       </div>
-    
+      <Footer/>
+
     </div>
     </>
    );

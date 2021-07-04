@@ -1,7 +1,7 @@
 const PopUp = ({popUpID,setpopUpID}) => {
   let paragraph
   let link
-  console.log(popUpID[3])
+  
   switch (popUpID[2]) {
     case "Tomatoes":
       paragraph="Cherry tomatoes range in size from a thumbtip to the size of a golf ball. Their shape ranges from spherical to slightly oblong to pointed at the bottom. They are often red, but can also be yellow, green, striped, and even black. More oblong cherry tomatoes often share characteristics with plum tomatoes, and are known as grape tomatoes. Cherry tomatoes can be quite sweet (such as the Sungold or Sunsweet yellow varieties), more traditionally acidic, or deep in flavor. They are delicious for snacking, in salads, lightly roasted or grilled, or baked. They require little to no pruning unlike larger tomato plants."
@@ -59,7 +59,7 @@ const PopUp = ({popUpID,setpopUpID}) => {
 
 
   return popUpID[0]==="display"?( 
-    <div style={{display:"flex"}} className="PopUpShell">
+    <div style={{display:"flex",transition:"2s"}} className="PopUpShell">
 
       <div className="ClosePopUp">
         <button onClick={()=>setpopUpID("dontShowPopUpMenu")} className="ClosePopUp--button">X</button>
@@ -107,7 +107,7 @@ const PopUp = ({popUpID,setpopUpID}) => {
       
 
     </div>
-   ):<></>
+   ):<div className="NOTHING"></div>
 }
  
 export default PopUp;
