@@ -59,6 +59,7 @@ const PopUp = ({popUpID,setpopUpID}) => {
 
       <main className="PopUpBox">
         <img src={popUpID[1]} alt="popUpItem"  />
+        {popUpID[2]}
         {layers}
       </main>
       
