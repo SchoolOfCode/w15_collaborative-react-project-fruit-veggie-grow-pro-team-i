@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{font-family: 'Montserrat', Courier, monospace;}
+
 .nav-bar{
   height: 10vh;
   width: 90vw;
@@ -40,5 +44,6 @@
   display: inline;
   margin: 20px;
 }
+
 
 
