@@ -48,7 +48,11 @@ const TileCards = ({sortCardState,popUpMenu}) => {
       if(this.space===3){SpaceLeafImage=leaf3}
       
       return(
-      <div key={this.id} className="Cardbox__centreScreen--allCards" onClick={()=>{popUpMenu(this.img,this.title,DifficultyLeafImage,SpaceLeafImage,TimeLeafImage)}}>
+      <div key={this.id} 
+      className="Cardbox__centreScreen--allCards" onClick={()=>{popUpMenu(this.img,this.title,DifficultyLeafImage,SpaceLeafImage,TimeLeafImage)}}>
+        <span>
+          
+        </span>
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
         <h1 className="CardTitle" >{this.title}</h1>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
