@@ -15,7 +15,7 @@ import mint from "../images/mint.jpg"
 import parsley from "../images/parsley.jpg"
 import dill from "../images/dill.jpg"
 
-const TileCards = ({sortCardState,callConsoleLog}) => {
+const TileCards = ({sortCardState,popUpMenu}) => {
 
   class Vegetables{
     constructor(id,title,difficulty,space,indoors,time,img){
@@ -24,9 +24,8 @@ const TileCards = ({sortCardState,callConsoleLog}) => {
       this.space = space;
       this.indoors = indoors;
       this.time = time;
-      this.id = id;
       this.img = img;
-
+      this.id=id
       this.leaf=leaf;
     }
 
@@ -49,7 +48,7 @@ const TileCards = ({sortCardState,callConsoleLog}) => {
       if(this.space===3){SpaceLeafImage=leaf3}
       
       return(
-      <div className="Cardbox__centreScreen--allCards" onClick={()=>{callConsoleLog(this.id)}}>
+      <div key={this.id} className="Cardbox__centreScreen--allCards" onClick={()=>{popUpMenu(this.img,this.title,DifficultyLeafImage,SpaceLeafImage,TimeLeafImage)}}>
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
         <h1 className="CardTitle" >{this.title}</h1>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
@@ -73,20 +72,20 @@ const TileCards = ({sortCardState,callConsoleLog}) => {
 
 
   // veg //============= ====title,difficulty,space,indoors, time, main Image
-let Potato=new Vegetables("id0","Potatoes",1,3,false,1,potatoes)
-let Tomato=new Vegetables("id1","Tomatoes",2,3,false,3,tomatoimgs)
-let Carrot=new Vegetables("id2","Carrot",2,3,false,3,carrots)
-let Onion =new Vegetables("id3","Onion",2,3,false,3,onions)
+let Potato=new Vegetables("id1","Potatoes",1,3,false,1,potatoes)
+let Tomato=new Vegetables("id2","Tomatoes",2,3,false,3,tomatoimgs)
+let Carrot=new Vegetables("id3","Carrot",2,3,false,3,carrots)
+let Onion =new Vegetables("id4","Onion",2,3,false,3,onions)
 // Fruits
-let Strawberry=new Vegetables("id4","Strawberries",1,2,true,2,strawberries)
-let Blueberry=new Vegetables("id5","Blueberries",2,2,true,2,blueberry)
-let Raspberry=new Vegetables("id6","Raspberries",1,2,true,2,raspberries)
-let Lime=new Vegetables("id7","Lime",1,2,true,3,lime)
+let Strawberry=new Vegetables("id5","Strawberries",1,2,true,2,strawberries)
+let Blueberry=new Vegetables("id6","Blueberries",2,2,true,2,blueberry)
+let Raspberry=new Vegetables("id7","Raspberries",1,2,true,2,raspberries)
+let Lime=new Vegetables("id8","Lime",1,2,true,3,lime)
 // Herbs
-let Basil=new Vegetables("id8","Basil",2,1,false,1,basil)
-let Mint=new Vegetables("id9","Mint",1,1,false,1,mint)
-let Parsley=new Vegetables("id10","Parsley",1,1,false,1,parsley)
-let Dill=new Vegetables("id11","Dill",1,1,false,1,dill)
+let Basil=new Vegetables("id9","Basil",2,1,false,1,basil)
+let Mint=new Vegetables("id10","Mint",1,1,false,1,mint)
+let Parsley=new Vegetables("id11","Parsley",1,1,false,1,parsley)
+let Dill=new Vegetables("id12","Dill",1,1,false,1,dill)
 // above is the layout of cards
 
 let ArrayOfFruitAndVeg = [
@@ -128,16 +127,16 @@ let SortedArray = []
 if(sortCardState === "default"){
   let countUntillYouPlaceTheFoodTitle = 0 // this just tells when to put a title
   
-  ArrayOfFruitAndVeg.forEach((item)=>{
+  ArrayOfFruitAndVeg.forEach((item,index)=>{
     
     if(countUntillYouPlaceTheFoodTitle===0){
-      SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Vegetables</h1>)//<<<<<title here
+      SortedArray.push(<h1 key={index+10} className="Cardbox__centreScreen--Title">Vegetables</h1>)//<<<<<title here
     }
     if(countUntillYouPlaceTheFoodTitle===4){
-      SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Fruit</h1>)//<<<<<title here
+      SortedArray.push(<h1 key={index+10} className="Cardbox__centreScreen--Title">Fruit</h1>)//<<<<<title here
     }
     if(countUntillYouPlaceTheFoodTitle===8){
-      SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Herbs</h1>)//<<<<<title here
+      SortedArray.push(<h1 key={index+10} className="Cardbox__centreScreen--Title">Herbs</h1>)//<<<<<title here
     }
     SortedArray.push(item.makeCard())
     countUntillYouPlaceTheFoodTitle++
@@ -152,13 +151,13 @@ if(sortCardState === "default"){
 
 
 if(sortCardState === "indoors"){
-  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Indoors</h1>)
+  SortedArray.push(<h1 key="Indoors" className="Cardbox__centreScreen--Title">Indoors</h1>)
    ArrayOfFruitAndVeg.filter((item)=>{
     return item.indoors === true?SortedArray.push(item.makeCard()):<></>
   })
 }
 if(sortCardState === "indoors"){
-  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Outdoors</h1>)
+  SortedArray.push(<h1 key="outdoors"  className="Cardbox__centreScreen--Title">Outdoors</h1>)
    ArrayOfFruitAndVeg.filter((item)=>{
     return item.indoors !== true?SortedArray.push(item.makeCard()):<></>
   })
@@ -173,7 +172,7 @@ if(sortCardState === "indoors"){
 
 
 if(sortCardState === "difficulty"){
-  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Difficulty</h1>)
+  SortedArray.push(<h1 key="Difficulty" className="Cardbox__centreScreen--Title">Difficulty</h1>)
   let NewArray = ArrayOfFruitAndVeg.sort((item,item2)=>{
     if(item.difficulty < item2.difficulty){
       return -1
@@ -192,7 +191,7 @@ if(sortCardState === "difficulty"){
 // sort through difficulty lowest to highest
 // ====================================== Difficulty============
 if(sortCardState === "space"){
-  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Space Required</h1>)
+  SortedArray.push(<h1 key="space" className="Cardbox__centreScreen--Title">Space Required</h1>)
   let NewArray = ArrayOfFruitAndVeg.sort((item,item2)=>{
     if(item.space < item2.space){
       return -1
@@ -212,7 +211,7 @@ if(sortCardState === "space"){
 // ====================================== Space ============
 
 if(sortCardState === "time"){
-  SortedArray.push(<h1 className="Cardbox__centreScreen--Title">Time Required</h1>)
+  SortedArray.push(<h1 key="time" className="Cardbox__centreScreen--Title">Time Required</h1>)
   let NewArray = ArrayOfFruitAndVeg.sort((item,item2)=>{
     if(item.time < item2.time){
       return -1

@@ -1,24 +1,30 @@
 import { useState } from "react"
 import TileCards from "./TileCards"
+import PopUp from "./popup/PopUp"
 import Hero from "../Hero"
+import Navbar from '../Navbar';
+import SortButtons from "./SortButtons";
+
 
 const BrowsePage = () => {
 
+  let [sortCardState,setSortCardState] = useState("default")
+  let [popUpID,setpopUpID] = useState("dontShowPopUpMenu")
 
   // THIS IS WHERE WE WILL BE WORKING for BrowsePage
-  function callConsoleLog(prop){
-    console.log(prop)
-    
+  function popUpMenu(img,title,difficulty,space,time){
+    setpopUpID(["display",img,title,difficulty,space,time])
   }
 
 
-  let [sortCardState,setSortCardState] = useState("default")
+  
   
   return ( 
     <>
-    <div className="BrowsePage">{/*<<thats the whole browse Page  */}
-
+    <div className="BrowsePage">
+    <Navbar/>
     <Hero/>
+
       {/* add a header here */}
 
 
@@ -44,8 +50,16 @@ const BrowsePage = () => {
           </div>
         </div>
 
-      
 
+    <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
+      
+      <div className="CardContainer">
+        <section className="Cardbox__centreScreen">
+          <TileCards popUpMenu={popUpMenu} sortCardState={sortCardState}/>
+        </section>
+        <SortButtons setSortCardState={setSortCardState}/>
+
+      
       </div>
     
     </div>

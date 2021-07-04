@@ -2,10 +2,14 @@ html {
   background: rgb(49, 49, 49);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{font-family: 'Montserrat', Courier, monospace;}
+
 .App {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   background-color: white;
 }
+
 
 
