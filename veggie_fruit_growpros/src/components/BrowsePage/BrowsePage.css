@@ -65,6 +65,10 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+.Cardbox__centreScreen h1:nth-child(1){
+  align-self: flex-start;
+  height: 54px;
+}
 .Cardbox__centreScreen--Title{
   text-align: left;
   height: 5vh;

@@ -12,8 +12,8 @@ const BrowsePage = () => {
   let [popUpID,setpopUpID] = useState("dontShowPopUpMenu")
 
   // THIS IS WHERE WE WILL BE WORKING for BrowsePage
-  function popUpMenu(img,title){
-    setpopUpID(["display",img,title])
+  function popUpMenu(img,title,difficulty,space,time){
+    setpopUpID(["display",img,title,difficulty,space,time])
   }
 
 

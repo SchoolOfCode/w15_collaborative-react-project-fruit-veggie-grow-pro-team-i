@@ -36,9 +36,54 @@
   border-image-source:linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%) ;
   border-image-slice: 60 30;
   overflow: auto;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  
 }
 .PopUpBox img{
   width: 100%;
   height:50%;
+}
+.PopUpTitle{
+  text-align: left;
+  margin-left: 30px;
+}
+.popUpDescription{
+  text-align: left;
+  padding: 30px;
+}
+.PopUP-Ratings{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  border: solid thick greenyellow;
+  min-height: 30%;
+}
+.PopUP-Ratings h1{
+  width: 100%;
+}
+.PopUP-Ratings li{
+  display: flex;
+  justify-content: space-evenly;
+}
+.PopUP-Ratings h3{
+  text-align: left;
+  width:110px;
+}
+.PopUP-Ratings img{
+  width: 90px;
+}
+
+
+
+.PopUp-UL-container{
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.PopUp-UL{
+  width: 20%;
 }
 
