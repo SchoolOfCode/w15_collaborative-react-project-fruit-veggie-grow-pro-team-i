@@ -2,7 +2,6 @@ import { useState } from "react"
 import TileCards from "./TileCards"
 import PopUp from "./popup/PopUp"
 import Hero from "../Hero"
-import NavBar from '../NavBar';
 import SortButtons from "./SortButtons";
 import Footer from "../Footer";
 
@@ -23,7 +22,6 @@ const BrowsePage = () => {
   return ( 
     <>
     <div className="BrowsePage">
-    <NavBar/>
     <Hero/>
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       
