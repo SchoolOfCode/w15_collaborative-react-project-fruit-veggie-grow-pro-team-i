@@ -85,5 +85,6 @@
 }
 .PopUp-UL{
   width: 20%;
+  list-style-image: url(/src/components/images/bulletpointleaf.png)
 }
 
