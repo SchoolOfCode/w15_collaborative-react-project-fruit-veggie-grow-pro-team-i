@@ -59,7 +59,7 @@ const PopUp = ({popUpID,setpopUpID}) => {
 
 
   return popUpID[0]==="display"?( 
-    <div style={{display:"flex"}} className="PopUpShell">
+    <div style={{display:"flex",transition:"2s"}} className="PopUpShell">
 
       <div className="ClosePopUp">
         <button onClick={()=>setpopUpID("dontShowPopUpMenu")} className="ClosePopUp--button">X</button>
@@ -107,7 +107,7 @@ const PopUp = ({popUpID,setpopUpID}) => {
       
 
     </div>
-   ):<></>
+   ):<div className="NOTHING"></div>
 }
  
 export default PopUp;
