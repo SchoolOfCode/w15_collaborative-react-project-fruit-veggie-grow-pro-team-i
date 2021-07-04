@@ -8,7 +8,9 @@ const NavBar = () => {
             <li className="nav-container-li">Browse</li>
         </nav>
         </div>
+        <div className="color-border"></div>
         </header>
+       
 
     );
 }
