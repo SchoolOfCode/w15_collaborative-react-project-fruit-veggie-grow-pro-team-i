@@ -1,0 +1,48 @@
+.QPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    width: 100vw;
+    background-color: aqua;
+}
+.QMain {
+    /* this is the main container for the questionnaire */
+    height: 80%;
+    width: 90%;
+    max-height: 600px;
+    max-width: 900px;
+    background-color: antiquewhite;
+}
+.QHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    font-size: 1.6rem;
+    background-color: lightcoral;
+}
+.QBody {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.QInputContainer {
+    height: 75%;
+    width: 75%;
+    background-color: lightpink;
+}
+.QImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 75%;
+    background-color: lightsalmon;
+}
+.QImage img {
+    height: 80%;
+    width: 70%;
+}

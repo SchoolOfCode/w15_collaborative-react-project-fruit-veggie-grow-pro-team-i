@@ -9,7 +9,7 @@ import {useState} from "react"
 
 function App() {
 
-  const [changePage, setChangePage] = useState("browsepage");
+  const [changePage, setChangePage] = useState("questionnaire");
   
 function changePageFunction(pagestring) {
   setChangePage(pagestring)
