@@ -1,25 +1,23 @@
+.Nav-Conatainer{
+    width: 100%;
+    height: 7.6vh;
+}
 .NavbarItems {
-    position: relative;
+    position: fixed;
     background-color: rgb(49, 49, 49);
+    left: 0;
     width: 100%;
     height: 7.6vh;
     display: flex;
     justify-content: center;
     justify-content: space-between;
+    border-top: solid thick;
+    border-image-source:linear-gradient(to  right,rgb(3, 200, 3),#c8d600 41.07%,#61cbd4 76.05%);
+    border-image-slice: 60 30;
     align-items: center;
     font-size: 1.2rem;
     z-index: 1;
 }
-
-.color-border{
-    position: relative;
-    vertical-align: top;
-    height: 0.4vh;
-    width: 100%;
-    background: linear-gradient(to  right,rgb(3, 200, 3),#c8d600 41.07%,#61cbd4 76.05%);
-    z-index: 2;
-}
-
 .navbar-logo {
     color: whitesmoke;
     justify-self: start;
@@ -46,6 +44,7 @@
 .nav-links {
     color: whitesmoke;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
