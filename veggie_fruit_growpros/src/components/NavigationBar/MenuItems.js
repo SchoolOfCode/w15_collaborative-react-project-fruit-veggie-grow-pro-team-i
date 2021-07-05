@@ -1,14 +1,20 @@
 export const MenuItems = [
     {
         title: 'Home',
-        link: '#',
+        function: 'browsepage',
         className: 'nav-links'
     },
     {
         title: 'Browse',
-        link: '#',
+        function: 'browsepage',
         className: 'nav-links'
     },
+    {
+        title: 'Questionnaire',
+        function: "questionnaire",
+        className: 'nav-links'
+    },
+
 ]
 
 /* 
@@ -18,4 +24,12 @@ to with ease.
 The  navbar will map through the objects creating a 
 
 Simply copy the object, also in Navbar.css add to the grid-template-columns
+
+------ How to use
+Title is the text which appears in Navigation Bar
+
+Function is where a string is handed to the changePageFunction
+
+ClassName is used for the styling the li
+----
  */

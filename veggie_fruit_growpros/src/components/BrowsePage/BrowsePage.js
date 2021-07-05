@@ -2,12 +2,13 @@ import { useState } from "react"
 import TileCards from "./TileCards"
 import PopUp from "./popup/PopUp"
 import Hero from "../Hero"
-import LandingInfoBlock  from "../LandingInfoBlock/LandingInfoBlock"
+import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
 import Footer from "../Footer";
+import Spacer from "../Spacer/Spacer"
 
 
-const BrowsePage = () => {
+const BrowsePage = ({changePage}) => {
 
   let [sortCardState,setSortCardState] = useState("default")
   let [popUpID,setpopUpID] = useState("dontShowPopUpMenu")
@@ -20,11 +21,20 @@ const BrowsePage = () => {
 
   
   
-  return ( 
+  return changePage === "browsepage" ? ( 
+
     <>
     <div className="BrowsePage">
     <Hero/>
+
+    <Spacer background={"white"}/>
+
     <LandingInfoBlock/>
+
+    <Spacer background={"linear-gradient(0deg, #e8e8e8 0%, #ffffff 100%)"}/>
+    
+    <Spacer background={"white"}/>
+
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       
       <div className="CardContainer">
@@ -38,7 +48,7 @@ const BrowsePage = () => {
 
     </div>
     </>
-   );
+   ) :  <></>;
 }
  
 export default BrowsePage;
