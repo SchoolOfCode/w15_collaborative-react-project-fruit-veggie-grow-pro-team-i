@@ -2,6 +2,7 @@ import { useState } from "react"
 import TileCards from "./TileCards"
 import PopUp from "./popup/PopUp"
 import Hero from "../Hero"
+import LandingInfoBlock  from "../LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
 import Footer from "../Footer";
 
@@ -23,6 +24,7 @@ const BrowsePage = () => {
     <>
     <div className="BrowsePage">
     <Hero/>
+    <LandingInfoBlock/>
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       
       <div className="CardContainer">

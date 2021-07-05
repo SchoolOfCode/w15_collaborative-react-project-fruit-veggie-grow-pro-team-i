@@ -8,7 +8,7 @@ const Navbar = () => {
         <>
         <div className="color-border"></div> 
         <nav className="NavbarItems">
-            <h1 className="navbar-logo">Logo<i className="navbar-icon"></i></h1>
+            <h1 className="navbar-logo">Logo<a href='#' className="navbar-icon" ></a></h1>
             <ul className="nav-menu">
                 {MenuItems.map((item, index) => {
                     return (

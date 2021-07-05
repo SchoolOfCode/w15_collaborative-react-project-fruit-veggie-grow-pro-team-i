@@ -1,0 +1,26 @@
+.landing-info {
+    background-color: #e8e8e8;
+    background-image: linear-gradient(0deg, #e8e8e8 0%, #ffffff 52%);
+    width: 100%;
+}
+
+.landing-info-title {
+    font-size: calc(28px + (38 - 28) * ((100vw - 375px) / (1600 - 375)));
+    align-self: center;
+}
+
+.landing-info-text {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.landing-info-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
