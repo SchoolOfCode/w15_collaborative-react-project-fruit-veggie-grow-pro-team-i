@@ -31,7 +31,7 @@ const BrowsePage = ({changePage}) => {
 
     <LandingInfoBlock/>
 
-    <Spacer background={"linear-gradient(0deg, #e8e8e8 0%, #ffffff 100%)"}/>
+    <Spacer background={"linear-gradient(180deg, #ffffff 0%, #E8E8E8 100%)"}/>
     
     <Spacer background={"white"}/>
 
@@ -44,6 +44,7 @@ const BrowsePage = ({changePage}) => {
         <SortButtons setSortCardState={setSortCardState}/>
       
       </div>
+      <Spacer background={"linear-gradient(180deg, #ffffff 0%, #E8E8E8 100%)"}/>
       <Footer/>
 
     </div>

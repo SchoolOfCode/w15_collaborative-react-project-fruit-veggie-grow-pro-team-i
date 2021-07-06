@@ -7,6 +7,7 @@ const Navbar = ({changePageFunction}) => {
         <>
         <div className="color-border"></div> 
         <nav className="NavbarItems">
+        <div className="NavbarSpacer"></div>
             <h1 className="navbar-logo">Logo</h1>
             <ul className="nav-menu">
                 {MenuItems.map((item, index) => {
@@ -15,6 +16,7 @@ const Navbar = ({changePageFunction}) => {
                             <h5 onClick={() => {changePageFunction(item.function)}} className={item.className}>
                             {item.title}
                             </h5>
+                            
                         </li>
                     )
                 })}

@@ -1,30 +1,41 @@
 .NavbarItems {
-    position: relative;
-    background-color: rgb(49, 49, 49);
+    position: fixed;
+    background-color: white;
     width: 100%;
-    height: 7.6vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
     z-index: 1;
+    border: solid #000;
+border-width: 0 1px;
+}
+
+.NavbarSpacer{
+    position:relative;
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+    z-index: 0;
+    border: thin #525b73;
 }
 
 .color-border{
-    position: relative;
+    position: fixed;
     vertical-align: top;
     height: 0.4vh;
     width: 100%;
     background: linear-gradient(to  right,rgb(3, 200, 3),#c8d600 41.07%,#61cbd4 76.05%);
+    margin-top: 9.6vh;
     z-index: 2;
 }
 
 .navbar-logo {
-    color: whitesmoke;
-    justify-self: start;
+    position: fixed;
+    color: black;
     margin-left: 1rem;
-    cursor: pointer;
 }
 
 .menu-icon {
@@ -33,19 +44,21 @@
 }
 
 .nav-menu {
-    color: whitesmoke;
+    color: black;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 20px;
     list-style: none;
     text-align: center;
     justify-content: end;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .nav-links {
-    color: whitesmoke;
+    color: #525b73;
     text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
 }
 
 

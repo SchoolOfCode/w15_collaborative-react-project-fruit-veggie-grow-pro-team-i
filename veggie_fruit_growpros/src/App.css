@@ -1,10 +1,17 @@
 .App {
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{font-family: 'Montserrat', Courier, monospace;}
+p{
+  color: #525b73;
+  font-size: 15px;
+  line-height: 24px;
+}
 
+h2{
+  font-weight: 400;
+}
 
 footer{
   display: flex;
