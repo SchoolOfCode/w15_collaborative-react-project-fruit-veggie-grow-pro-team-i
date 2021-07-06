@@ -6,7 +6,6 @@ const Navbar = ({changePageFunction}) => {
     return (
         <>
         <header className="Nav-Conatainer">
-        <div className="color-border"></div> 
         <nav className="NavbarItems">
             <h1 className="navbar-logo">Logo</h1>
             <ul className="nav-menu">
