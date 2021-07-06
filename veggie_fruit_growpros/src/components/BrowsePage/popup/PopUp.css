@@ -4,6 +4,16 @@
   text-decoration: none;
 }
 
+.PopUpH2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.PopUpH3{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
 .PopUpShell{
   display: flex;
   flex-direction: column;
@@ -32,9 +42,9 @@
   width: 70%;
   height: 90%;
   background: white;
-  border: solid thick;
+  /* border: solid thick;
   border-image-source:linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%) ;
-  border-image-slice: 60 30;
+  border-image-slice: 60 30; */
   overflow: auto;
   font-size: 1.2rem;
   display: flex;
@@ -46,23 +56,26 @@
   height:50%;
 }
 .PopUpTitle{
-  text-align: left;
-  margin-left: 30px;
+  text-align: center;
+  padding: 40px 60px 15px 60px;
 }
 .popUpDescription{
   text-align: left;
-  padding: 30px;
+  padding: 15px 60px 0px 60px;
+  background-color: white;
 }
+
 .PopUP-Ratings{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 30px;
-  border: solid thick greenyellow;
-  min-height: 30%;
+  background-image: linear-gradient(180deg, #FFFFFF, #f4f5f9);
+  padding: 60px 40px 80px 40px;
 }
-.PopUP-Ratings h1{
+.PopUP-Ratings h2{
+  text-align: center;
   width: 100%;
+  padding: 0px 0px 40px 0px;
 }
 .PopUP-Ratings li{
   display: flex;
@@ -77,14 +90,25 @@
 }
 
 
-
 .PopUp-UL-container{
-  display: flex;
-  padding: 20px;
+  display: grid;
+  padding: 80px 40px 80px 40px;
   justify-content: space-evenly;
+  background-image: linear-gradient(180deg, #FFFFFF, #f4f5f9);
 }
+
+.PopUp-UL-Header {
+  padding: 0px 60px 0px 0px;
+}
+
 .PopUp-UL{
-  width: 20%;
+  padding: 40px 0px 0px 0px;
+  columns: 2;
+  column-gap: 80px;
   list-style-image: url(/src/components/images/bulletpointleaf.png)
+}
+
+.PopUp-Ref {
+  padding: 60px 40px 60px 40px;
 }
 
