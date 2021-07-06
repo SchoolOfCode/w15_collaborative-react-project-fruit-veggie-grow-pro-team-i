@@ -36,11 +36,26 @@
 }
 
 .QInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%;
     width: 75%;
     background-color: lightpink;
 }
+.QInputBoxsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    border: none;
 
+}
+.QInputBoxsContainer-InputBoxs{
+    width: 50%;
+    text-align: center;
+}
 .QImage {
     display: flex;
     justify-content: center;
