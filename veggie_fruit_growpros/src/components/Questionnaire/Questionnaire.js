@@ -52,12 +52,19 @@ const Questionnaire = ({changePage}) => {
         time: 0
     })
 
-    let [Flex,setFlex] = useState("none");
+    let [InlineVar,setInlineVar] = useState("none");
 
     let [i, setI] = useState(0);
+    
+    
     function changePageAndObject(){
         setI(i = i + 1);
         if(i === 3){setI(0);}
+        if(i === 3){
+            setInlineVar("none");
+        }else{
+            setInlineVar("inline-block");
+        }
     }
 
     return changePage === "questionnaire" ? ( 
@@ -73,7 +80,7 @@ const Questionnaire = ({changePage}) => {
                     <Input header={QNumber[i].header} />
 
                     <section className="QButtonContainer">
-                        <button onClick={() => {changePageAndObject()}}>{QNumber[i].buttonOne}</button>
+                        <button style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
                         <button onClick={(e) => {changePageAndObject()}}>{QNumber[i].buttonTwo}</button>
                     </section>
                     

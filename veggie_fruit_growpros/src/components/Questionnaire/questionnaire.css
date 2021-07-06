@@ -1,3 +1,4 @@
+
 .QPage {
     position:fixed;
     display: flex;
@@ -7,7 +8,8 @@
     height: 90vh;
     width: 100vw;
     max-width: 100vw;
-    background-color: aqua;
+    background:url(/src/components/images/vegimageplaceholder.jpg);
+    background-size: cover;
 }
 
 .QMain {
@@ -16,7 +18,8 @@
     width: 90%;
     max-height: 600px;
     max-width: 900px;
-    background-color: antiquewhite;
+    background-color: white;
+    border: thin solid black;
 }
 
 .QHeader {
@@ -26,7 +29,10 @@
     align-items: center;
     height: 25%;
     font-size: 1.6rem;
-    background-color: lightcoral;
+    background-image: linear-gradient(90deg,#ffffff  0%, #bae6b9 100%);
+
+    border-bottom: thin solid black;
+    
 }
 
 .QBody {
@@ -41,7 +47,7 @@
     justify-content: space-around;
     height: 100%;
     width: 75%;
-    background-color: lightpink;
+    background-image: linear-gradient(180deg, #fff, #f4f5f9);
 }
 .QInputBoxsContainer{
     display: flex;
@@ -56,13 +62,22 @@
     width: 50%;
     text-align: center;
 }
+.QButtonContainer{
+    align-self: flex-end;
+    
+}
+.QButtonContainer button{
+    margin-right: 20px;
+    height: 44px;
+    width: 54px;
+}
 .QImage {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25%;
     height: 100%;
-    background-color: lightsalmon;
+    
 }
 
 .QImage img {
