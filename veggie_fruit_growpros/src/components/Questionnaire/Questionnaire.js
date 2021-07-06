@@ -4,15 +4,6 @@ import QImage from "../images/strawberries.jpg";
 import { useState } from "react";
 
 const Questionnaire = ({changePage}) => {
-
-    const userProfile = {
-        name : "",
-        indoors: false,
-        space: 0,
-        experience: 0,
-        time: 0
-    };
-    
     const [QNumber, setQNumber] = useState(
         [
             {
@@ -21,7 +12,7 @@ const Questionnaire = ({changePage}) => {
                 questionOne: "What's your name?",
                 questionTwo: "",
                 image: "",
-                buttonOne: "",
+                buttonOne: "hideThisButton",
                 buttonTwo: "Next"
             },
             {
@@ -53,14 +44,26 @@ const Questionnaire = ({changePage}) => {
             }
         ]
     );
+    const [Profile,setProfile] = useState({
+        name : "",
+        indoors: false,
+        space: 0,
+        experience: 0,
+        time: 0
+    })
+
+    let [InlineVar,setInlineVar] = useState("none");
 
     let [i, setI] = useState(0);
-
+    
+    
     function changePageAndObject(){
         setI(i = i + 1);
-        console.log(i);
-        if(i > 2){
-            setI(0);
+        if(i === 3){setI(0);}
+        if(i === 3){
+            setInlineVar("none");
+        }else{
+            setInlineVar("inline-block");
         }
     }
 
@@ -71,9 +74,17 @@ const Questionnaire = ({changePage}) => {
                 <h2>{QNumber[i].header}</h2>
             </header>
             <section className="QBody">
+
                 <section className="QInputContainer">
-                    <Input />
-                    <button onClick={() => {changePageAndObject()}}>Next</button>
+
+                    <Input header={QNumber[i].header} />
+
+                    <section className="QButtonContainer">
+                        <button style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
+                        <button onClick={(e) => {changePageAndObject()}}>{QNumber[i].buttonTwo}</button>
+                    </section>
+                    
+                    
                 </section>
                 <section className="QImage">
                     <img src={QImage}></img>
