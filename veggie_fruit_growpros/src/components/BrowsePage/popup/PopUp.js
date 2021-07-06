@@ -1,5 +1,3 @@
-import Spacer from "../../Spacer/Spacer.js"
-
 function PopUp({ popUpID, setpopUpID }) {
   let paragraph
   let link
@@ -67,11 +65,6 @@ function PopUp({ popUpID, setpopUpID }) {
         <button onClick={() => setpopUpID("dontShowPopUpMenu")} className="ClosePopUp--button">X</button>
       </div>
 
-
-
-
-
-
       <main className="PopUpBox">
         <img src={popUpID[1]} alt="popUpItem" />
         <h1 className="PopUpTitle">{popUpID[2]}</h1>
@@ -97,12 +90,12 @@ function PopUp({ popUpID, setpopUpID }) {
             <li>"NO-IDEA"</li>
           </ul>
         </section>
+
         <section className="PopUp-Ref">
           <h2 className="PopUpH2">References</h2>
           <h5><a href={link}>{link}</a></h5>
         </section>
       </main>
-
 
     </div>
   ) : <div className="NOTHING"></div>

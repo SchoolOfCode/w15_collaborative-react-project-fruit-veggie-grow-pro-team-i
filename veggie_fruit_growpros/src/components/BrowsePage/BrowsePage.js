@@ -5,7 +5,6 @@ import Hero from "../Hero"
 import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
 import Footer from "../Footer";
-import Spacer from "../Spacer/Spacer"
 
 
 const BrowsePage = ({changePage}) => {
@@ -26,20 +25,15 @@ const BrowsePage = ({changePage}) => {
     <>
     <div className="BrowsePage">
     <Hero/>
-
     <LandingInfoBlock/>
-
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
-      
       <div className="CardContainer">
         <section className="Cardbox__centreScreen">
           <TileCards popUpMenu={popUpMenu} sortCardState={sortCardState}/>
         </section>
         <SortButtons setSortCardState={setSortCardState}/>
-      
       </div>
       <Footer/>
-
     </div>
     </>
    ) :  <></>;

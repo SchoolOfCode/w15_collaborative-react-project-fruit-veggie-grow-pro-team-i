@@ -15,7 +15,6 @@ function changePageFunction(pagestring) {
   setChangePage(pagestring)
 }
 
-
   return (
     <div className="App">
       <Navbar changePageFunction={changePageFunction}/>

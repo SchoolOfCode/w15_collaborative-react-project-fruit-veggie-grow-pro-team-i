@@ -9,6 +9,7 @@
     max-width: 100vw;
     background-color: aqua;
 }
+
 .QMain {
     /* this is the main container for the questionnaire */
     height: 80%;
@@ -17,6 +18,7 @@
     max-width: 900px;
     background-color: antiquewhite;
 }
+
 .QHeader {
     display: flex;
     flex-direction: row;
@@ -26,16 +28,19 @@
     font-size: 1.6rem;
     background-color: lightcoral;
 }
+
 .QBody {
     display: flex;
     height: 75%;
     width: 100%;
 }
+
 .QInputContainer {
     height: 100%;
     width: 75%;
     background-color: lightpink;
 }
+
 .QImage {
     display: flex;
     justify-content: center;
@@ -44,6 +49,7 @@
     height: 100%;
     background-color: lightsalmon;
 }
+
 .QImage img {
     height: 80%;
     width: 70%;
