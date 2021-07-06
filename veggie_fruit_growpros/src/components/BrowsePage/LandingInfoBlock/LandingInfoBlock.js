@@ -4,7 +4,7 @@ const LandingInfoBlock = () => {
     return ( 
         <section className="landing-info">
             <div className="landing-info-text-container">
-                <h1 className="landing-info-title">We are here to help!</h1>
+                <h2 className="landing-info-title">We are here to help!</h2>
                 <p className="landing-info-text">Do you fancy learning how to grow your own fruit and vegetables?
                 <br/>
                 We are here to help you get into growing some crops!

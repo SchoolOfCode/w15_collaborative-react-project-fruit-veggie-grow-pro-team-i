@@ -6,12 +6,15 @@
 .landing-info-title {
     font-size: calc(28px + (38 - 28) * ((100vw - 375px) / (1600 - 375)));
     align-self: center;
+    margin: 16px;
+    font-weight: 600;
 }
 
 .landing-info-text {
     font-size: calc(14px + (24 - 14) * ((100vw - 375px) / (1600 - 375)));
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    margin: 15px
 }
 
 .landing-info-text-container {
