@@ -52,7 +52,8 @@ const Questionnaire = ({changePage,setChangePage}) => {
     })
 
     let [InlineVar,setInlineVar] = useState("none");
-
+    let [InlineVar2,setInlineVar2] = useState("inline-block");
+    
     let [i, setI] = useState(0);
     function changePageQ(plusOrMinus){
 
@@ -63,11 +64,16 @@ const Questionnaire = ({changePage,setChangePage}) => {
         }else{
             setI(i= i - 1)
         }
-
-        
-        if(i === 0){setInlineVar("none");
-        }else{
+        if(i === 0){
+            setInlineVar("none");
+            setInlineVar2("inline-block")
+        }else if(i === 1){
             setInlineVar("inline-block");
+            setInlineVar2("none")
+        }else if(i === 2){
+            setInlineVar("inline-block");
+        }else if(i === 3){
+            setInlineVar("none");
         }
         console.log(i)
 
@@ -83,13 +89,13 @@ const Questionnaire = ({changePage,setChangePage}) => {
 
                 <section className="QInputContainer">
 
-                    <Input header={QNumber[i].header} />
+                    <Input header={QNumber[i].questionOne} InlineVar={InlineVar} InlineVar2={InlineVar2}/>
 
                     <section className="QButtonContainer">
 
                         <button onClick={(e) => {changePageQ(false)}} style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
 
-                        <button onClick={(e) => {changePageQ(true)}}>{QNumber[i].buttonTwo}</button>
+                        <button onClick={(e) => {changePageQ(true)}} >{QNumber[i].buttonTwo}</button>
                     </section>
                     
                     
