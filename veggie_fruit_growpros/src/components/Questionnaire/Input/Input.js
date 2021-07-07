@@ -32,6 +32,10 @@ const Input = ({setProfile,header,InlineVar,InlineVar2}) => {
                 <option value="">hi</option>
             </select>
 
+            <select style={{display:InlineVar}} name="" id="">
+                <option value="">numb2</option>
+            </select>
+
         </div>
      );
 }
