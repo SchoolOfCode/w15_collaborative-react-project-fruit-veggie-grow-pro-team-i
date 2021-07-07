@@ -5,6 +5,7 @@ import Hero from "../Hero"
 import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
 import Footer from "../Footer";
+import Weather from "./weatherSection/Weather"
 
 
 const BrowsePage = ({changePage}) => {
@@ -16,16 +17,13 @@ const BrowsePage = ({changePage}) => {
   function popUpMenu(img,title,difficulty,space,time){
     setpopUpID(["display",img,title,difficulty,space,time])
   }
-
-
-  
   
   return changePage === "browsepage" ? ( 
 
     <>
     <div className="BrowsePage">
     <Hero/>
-    <LandingInfoBlock/>
+    <LandingInfoBlock infoHead={"We are here to help!"} infoBody={true}/>
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       <div className="CardContainer">
         <section className="Cardbox__centreScreen">
@@ -33,6 +31,8 @@ const BrowsePage = ({changePage}) => {
         </section>
         <SortButtons setSortCardState={setSortCardState}/>
       </div>
+      <LandingInfoBlock infoHead={"Thirsty plants?"} infoBody={false}/>
+      <Weather/>
       <Footer/>
     </div>
     </>

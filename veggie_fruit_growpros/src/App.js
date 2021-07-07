@@ -19,7 +19,7 @@ function changePageFunction(pagestring) {
     <div className="App">
       <Navbar changePageFunction={changePageFunction}/>
       <BrowsePage changePage={changePage}/>
-      <Questionnaire changePage={changePage}/>
+      <Questionnaire changePage={changePage} setChangePage={setChangePage}/>
       {/* add a LandingPage here*/}
     </div>
   );

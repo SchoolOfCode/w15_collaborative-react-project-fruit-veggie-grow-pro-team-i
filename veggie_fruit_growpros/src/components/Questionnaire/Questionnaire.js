@@ -3,9 +3,9 @@ import Input from "./Input/Input.js";
 import QImage from "../images/strawberries.jpg";
 import { useState } from "react";
 
-const Questionnaire = ({changePage}) => {
-    const [QNumber, setQNumber] = useState(
-        [
+const Questionnaire = ({changePage,setChangePage}) => {
+    
+    const QNumber=[
             {
                 id: 0,
                 header: "Let's get started",
@@ -43,7 +43,6 @@ const Questionnaire = ({changePage}) => {
                 buttonTwo: ""
             }
         ]
-    );
     const [Profile,setProfile] = useState({
         name : "",
         indoors: false,
@@ -53,18 +52,31 @@ const Questionnaire = ({changePage}) => {
     })
 
     let [InlineVar,setInlineVar] = useState("none");
-
+    let [InlineVar2,setInlineVar2] = useState("inline-block");
+    
     let [i, setI] = useState(0);
-    
-    
-    function changePageAndObject(){
-        setI(i = i + 1);
-        if(i === 3){setI(0);}
-        if(i === 3){
-            setInlineVar("none");
+    function changePageQ(plusOrMinus){
+
+        if(plusOrMinus){
+            setI(i = i + 1);
+            if(i === 3){setChangePage("browsepage")}
+            if(i === 3){setI(0);}
         }else{
-            setInlineVar("inline-block");
+            setI(i= i - 1)
         }
+        if(i === 0){
+            setInlineVar("none");
+            setInlineVar2("inline-block")
+        }else if(i === 1){
+            setInlineVar("inline-block");
+            setInlineVar2("none")
+        }else if(i === 2){
+            setInlineVar("inline-block");
+        }else if(i === 3){
+            setInlineVar("none");
+        }
+        console.log(i)
+
     }
 
     return changePage === "questionnaire" ? ( 
@@ -77,17 +89,19 @@ const Questionnaire = ({changePage}) => {
 
                 <section className="QInputContainer">
 
-                    <Input header={QNumber[i].header} />
+                    <Input header={QNumber[i].questionOne} InlineVar={InlineVar} InlineVar2={InlineVar2}/>
 
                     <section className="QButtonContainer">
-                        <button style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
-                        <button onClick={(e) => {changePageAndObject()}}>{QNumber[i].buttonTwo}</button>
+
+                        <button onClick={(e) => {changePageQ(false)}} style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
+
+                        <button onClick={(e) => {changePageQ(true)}} >{QNumber[i].buttonTwo}</button>
                     </section>
                     
                     
                 </section>
                 <section className="QImage">
-                    <img src={QImage}></img>
+                    <img src={QImage} alt="plant growing"></img>
                 </section>
             </section>
         </main>
