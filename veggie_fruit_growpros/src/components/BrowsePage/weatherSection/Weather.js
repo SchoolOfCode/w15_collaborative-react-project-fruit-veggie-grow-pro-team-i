@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
 import "./weather.css"
 const Weather = () => {
-
-  let city = "wolverhampton"
   
   let [Located,setLocated] = useState("")
   let [icon,setIcon] = useState("")
@@ -10,10 +8,14 @@ const Weather = () => {
   let [feelslike,setFeelslike] = useState("")
   let [WeatherDescrip,setWeatherDescrip] = useState("")
   let [WeatherDescripText,setWeatherDescripText]= useState("")
+  let [userInput,setUserInput]=useState("")
+  let [city,setCity]=useState("wolverhampton")
+
 useEffect(()=>{
 
 
   async function getWeatherApi(){
+    try{
 
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_veggie_fruit_growprosAPI_KEY}&units=metric`)
 
@@ -26,11 +28,30 @@ useEffect(()=>{
     setWeatherDescripText(data.weather[0].description)
     console.log(data)
 
+  } catch(error){
+    console.log("error",error)
+  }
+
+
+    
   }
   getWeatherApi()
 
-},[])
+},[city])
 
+function handleInputChange(enter){
+  if(enter === "Enter"){
+    setCity(userInput)
+  }
+  
+}
+function getUserInput(input){
+  setUserInput(input)
+  if(input === "enter"){
+    console.log("yes")
+  }
+  console.log(userInput)
+}
 
   return ( 
     <section className="WeatherContainer">
@@ -49,9 +70,13 @@ useEffect(()=>{
         <h4>desciption</h4>
         <h3>'{WeatherDescripText}'</h3>
       </div>
-    
-    
+      <div className="WeatherContainer-inputcontainer">
+        <input type="text" className="WeatherContainer-Input" placeholder="Type a city" onChange={(e)=>{getUserInput(e.target.value)}} onKeyDown={(e)=>{handleInputChange(e.key)}}/>
+        <button className="WeatherContainer-button" onClick={()=>{handleInputChange("Enter")}} >Search</button>
+      </div>
+      
     </section>
+    
    );
 }
  

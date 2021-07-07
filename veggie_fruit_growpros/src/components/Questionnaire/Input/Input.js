@@ -1,11 +1,11 @@
 
-const Input = ({setProfile}) => {
+const Input = ({setProfile,header}) => {
     // Changing display of select element
     
 
     return ( 
         <div className="QInputBoxsContainer">
-            <h4>What's your name</h4>
+            <h4>{header}</h4>
             <input className="QInputBoxsContainer-InputBoxs" type={"text"} onChange={(e)=>{setProfile(e.target.value)}}>
             </input>
         </div>
