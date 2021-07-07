@@ -3,7 +3,7 @@ import Input from "./Input/Input.js";
 import QImage from "../images/strawberries.jpg";
 import { useState } from "react";
 
-const Questionnaire = ({changePage}) => {
+const Questionnaire = ({changePage,setChangePage}) => {
     const [QNumber, setQNumber] = useState(
         [
             {
@@ -59,12 +59,17 @@ const Questionnaire = ({changePage}) => {
     
     function changePageAndObject(){
         setI(i = i + 1);
+        if(i == 3){setChangePage("browsepage")}
+        console.log(i)
+
         if(i === 3){setI(0);}
         if(i === 3){
             setInlineVar("none");
         }else{
             setInlineVar("inline-block");
         }
+        console.log(i)
+
     }
 
     return changePage === "questionnaire" ? ( 
