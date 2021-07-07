@@ -6,7 +6,7 @@ const LandingInfoBlock = ({infoHead,infoBody}) => {
 [
     `Do you fancy learning how to grow your own fruitand vegetables? \nWe are here to help you get into growing some crops!\nWhether you're a complete beginner or your fingers are green, please check out our easy to follow introductions to growing your own fruit and vegetables.`,
 
-    "Dont want water your plants today. \n 'plants under the Weather', Why not check our weather forcast app to spy for rain ;) "
+    "Dont want to water your plants today. \n 'plants under the Weather', Why not check our weather forcast app to spy for rain ;) "
 ]
 
 
