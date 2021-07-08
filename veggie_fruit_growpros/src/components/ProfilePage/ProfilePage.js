@@ -1,5 +1,5 @@
 import "./profile.css"
-import profileIMG from "../images/profile.png"
+
 import { useEffect, useState } from "react"
 
 import potato from "../images/potatoes.jpg"
@@ -75,32 +75,27 @@ useEffect(()=>{
 
 },[changePage])
 
-
-
-
-
-
- 
   
   return changePage === "Profile"?( 
     <div className="ProfilePage">
       <header className="ProfilePage__header">
         <div className="ProfilePage__header__imgCont">
-          <img src={profileIMG} alt="" />
+          <h1 className="ProfilePage__header__imgCont__border">J</h1>
         </div>
         <section className="ProfilePage__header__InfoContainer">
           <h1>{localStorage.getItem("name")}</h1>{/* NAME GOES HERE */}
+
           <h3>You Chose to grow Indoors: {localStorage.getItem("Indoors")}</h3>{/* you will be growing indoors/outdoors */}
           <h3>You have this much space: {LocSpace}</h3>{/* you have this much space */}
           <h3>your fingers are:{localStorage.getItem("diffic")}</h3>{/* your are this experienced */}
           <h3>Your Avaiabilty is:{localStorage.getItem("time")}</h3>{/* your have this much time */}
         </section>
       </header>
-      <main className="ProfilePage__main">
+      <article className="ProfilePage__main">
         <h2>Based of your Profile we recommened:</h2>
         <h1>{VegTitle}</h1>
         <img src={choseImg} alt="" />
-      </main>
+      </article>
     </div>
    ):<></>
 }

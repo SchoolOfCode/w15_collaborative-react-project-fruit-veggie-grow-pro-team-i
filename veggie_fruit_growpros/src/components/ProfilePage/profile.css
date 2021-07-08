@@ -1,23 +1,37 @@
 .ProfilePage{
   height: 90vh;
-  max-width: 100vw;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
 }
 .ProfilePage__header{
   height: 50%;
   border-bottom: solid thin;
 }
 .ProfilePage__header__imgCont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50%;
+  
 }
-.ProfilePage__header__imgCont img{
-  max-width:100%;
-  max-height:100%;
+.ProfilePage__header__imgCont__border{
+  
+  border: solid thick greenyellow;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 7rem;
 }
+
 .ProfilePage__header__InfoContainer{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  height: 50%;
 }
 .ProfilePage__header__InfoContainer h3{
   width: 50%;
