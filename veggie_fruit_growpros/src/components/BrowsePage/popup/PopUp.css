@@ -4,9 +4,18 @@
   text-decoration: none;
 }
 
+a {
+  color: #6cad55;
+}
+
+a:hover {
+  color: #548642;
+}
+
 .PopUpH2 {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .PopUpH3 {
@@ -51,17 +60,16 @@
 
 .PopUpBox img {
   width: 100%;
-  height:50%;
 }
 
 .PopUpTitle {
   text-align: center;
-  padding: 40px 60px 15px 60px;
+  margin: 8% 8% 2% 8%;
 }
 
 .popUpDescription {
   text-align: left;
-  padding: 15px 60px 0px 60px;
+  margin: 4% 8% 4% 8%;
   background-color: white;
 }
 
@@ -69,14 +77,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-image: linear-gradient(180deg, #FFFFFF, #f4f5f9);
-  padding: 60px 40px 80px 40px;
+  margin: 4% 8% 8% 8%;
 }
 
 .PopUP-Ratings h2 {
   text-align: center;
   width: 100%;
-  padding: 0px 0px 40px 0px;
 }
 
 .PopUP-Ratings li {
@@ -93,51 +99,34 @@
   width: 90px;
 }
 
-.PopUp-UL-container {
-  display: grid;
-  padding: 80px 40px 80px 40px;
-  justify-content: space-evenly;
-  background-image: linear-gradient(180deg, #FFFFFF, #f4f5f9);
-}
-
-.PopUp-UL-Header {
-  padding: 0px 60px 0px 0px;
-}
-
-.PopUp-UL {
-  padding: 40px 0px 0px 0px;
-  columns: 2;
-  column-gap: 80px;
-  list-style-image: url(/src/components/images/bulletpointleaf.png)
-}
-
 .PopUp-Ref {
   padding: 60px 40px 60px 40px;
+  background-color: #2a2a2a;
+  color: white;
 }
 
 .InstructionsSection {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 6% 6% 6% 6%;
+  margin: 6% 8% 6% 8%;
 
 }
 
 .InstructionsText {
-  width: 55%;
+  width: 53%;
   text-align: left;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 
 .InstructionsText-RightColumn {
-  width: 55%;
+  width: 53%;
   text-align: left;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
 .InstructionsImage {
   width: 42%;
-
 }
 
 

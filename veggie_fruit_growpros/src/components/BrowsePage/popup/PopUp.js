@@ -1,4 +1,6 @@
-import tomatoes from "../../images/tomatoimgs.jpg";
+import sowingImg from "../../images/sow_popup.png";
+import growingImg from "../../images/grow_popup.png";
+import harvestingImg from "../../images/harvest_popup.png";
 
 function PopUp({ popUpID, setpopUpID }) {
   let paragraph;
@@ -15,10 +17,10 @@ function PopUp({ popUpID, setpopUpID }) {
 
   switch (popUpID[2]) {
     case "Tomatoes":
-      paragraph = "Cherry tomatoes range in size from a thumbtip to the size of a golf ball. Their shape ranges from spherical to slightly oblong to pointed at the bottom. They are often red, but can also be yellow, green, striped, and even black. More oblong cherry tomatoes often share characteristics with plum tomatoes, and are known as grape tomatoes. Cherry tomatoes can be quite sweet (such as the Sungold or Sunsweet yellow varieties), more traditionally acidic, or deep in flavor. They are delicious for snacking, in salads, lightly roasted or grilled, or baked. They require little to no pruning unlike larger tomato plants."
-      link = "https://en.wikipedia.org/wiki/Tomato"
+      paragraph = "Growing your own tomatoes is simple and just a couple of plants will reward you with plenty of delicious tomatoes through the summer. Sow indoors, then plant outdoors in a sunny, sheltered spot, or in a greenhouse. There's a whole array to try, from tiny sweet cherry tomatoes to full-flavoured giant beefsteak types."
+      link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/tomatoes"
       sowTitle = "Sowing"
-      sowImage = {tomatoes}
+      sowImage = sowingImg
       sowDescription = [
         "Tomatoes are easy to grow from seed sown indoors in warm conditions. Sow from late March to early April if you plan to grow the plants outdoors. If you’ll be growing your tomatoes in a greenhouse, you can start sowing earlier, from late February to mid-March.",
         <br />,
@@ -29,7 +31,7 @@ function PopUp({ popUpID, setpopUpID }) {
         "Young plants are available from garden centres in spring if you don’t have the space or time to grow from seed. But they will still require frost-free conditions and hardening off before planting outside."
       ]
       growTitle = "Growing"
-      growImage = {tomatoes}
+      growImage = growingImg
       growDescription = [
         "When the flowers of the first truss are beginning to open, transfer to 23cm (9in) pots or growing bags, or plant outside in a warm sunny spot, 45–60cm (18–24in) apart. Plants for growing outdoors should be acclimatised first, by hardening off, to prevent a check in growth.",
         <br />,
@@ -46,7 +48,7 @@ function PopUp({ popUpID, setpopUpID }) {
         "For cordon (indeterminate) tomatoes, there is evidence that removing some leaves above the ripening truss (which allows the fruit to be warmer during the day but cooler at night) can encourage slightly earlier ripening, without negatively affecting cropping. Removing leaves below the ripening truss doesn’t improve ripening but can help to reduce the spread of diseases such as tomato leaf mould and tomato blight, where these are a problem."
       ]
       harvestTitle = "Harvesting"
-      harvestImage = {tomatoes}
+      harvestImage = harvestingImg
       harvestDescription = [
         "Tomatoes start to ripen from mid-summer onwards, depending on the variety, weather conditions and fruit size. Smaller cherry tomatoes ripen more quickly than larger fruits, and greenhouse tomatoes usually start cropping earlier than those grown outdoors, and continue for longer, well into autumn.",
         <br />,
@@ -195,35 +197,19 @@ function PopUp({ popUpID, setpopUpID }) {
           </ul>
         </section>
 
-        <section className="PopUp-UL-container">
-          <h2 className="PopUp-UL-Header" className="PopUpH2">What you'll need</h2>
-          <ul className="PopUp-UL">
-            <li>"Compost"</li>
-            <li>"Trowel"</li>
-            <li>"Compost"</li>
-            <li>"I"</li>
-            <li>"HAVE"</li>
-            <li>"NO-IDEA"</li>
-          </ul>
-        </section>
-
         <section className="InstructionsSection">
           <section className="InstructionsText">
             <h2 className="PopUpH2">{sowTitle}</h2>
             <p>{sowDescription}</p>
           </section>
         <section className="InstructionsImage">
-            {/* An image will be placed here to illustrate sowing */}
             <img src={sowImage} alt="Seeds being sown into small pots."></img>
-            <p>* Insert image here *</p>
           </section>
         </section>
 
         <section className="InstructionsSection">
           <section className="InstructionsImage">
-            {/* An image will be placed here to illustrate growing */}
             <img src={growImage} alt="A young plant that is growing."></img>
-            <p>* Insert image here *</p>
           </section>
           <section className="InstructionsText-RightColumn">
             <h2 className="PopUpH2">{growTitle}</h2>
@@ -231,21 +217,19 @@ function PopUp({ popUpID, setpopUpID }) {
           </section>
         </section>
 
-        <section className="InstructionsSection">
+        <section className="InstructionsSection lightGrey-bg">
           <section className="InstructionsText">
             <h2 className="PopUpH2">{harvestTitle}</h2>
             <p>{harvestDescription}</p>
           </section>
           <section className="InstructionsImage">
-            {/* An image will be placed here to illustrate harvesting */}
             <img src={harvestImage} alt="Crops being harvested."></img>
-            <p>* Insert image here *</p>
           </section>
         </section>
 
         <section className="PopUp-Ref">
           <h2 className="PopUpH2">References</h2>
-          <h5><a href={link}>{link}</a></h5>
+          <p><a href={link}>{link}</a></p>
         </section>
       </main>
 
