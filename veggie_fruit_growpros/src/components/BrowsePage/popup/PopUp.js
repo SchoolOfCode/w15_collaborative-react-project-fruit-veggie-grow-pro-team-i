@@ -1,6 +1,5 @@
 
 
-
 import {Info} from "./popUpInfo"
 
 
@@ -8,6 +7,15 @@ import sowingImg from "../../images/sow_popup.png";
 import growingImg from "../../images/grow_popup.png";
 import harvestingImg from "../../images/harvest_popup.png";
 
+let sowTitle;
+let sowImage;
+let sowDescription;
+let growTitle;
+let growImage;
+let growDescription;
+let harvestTitle;
+let harvestImage;
+let harvestDescription;
 
 function PopUp({ popUpID, setpopUpID }) {
   let paragraph
