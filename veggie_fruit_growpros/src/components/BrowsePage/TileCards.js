@@ -76,6 +76,7 @@ const TileCards = ({sortCardState,popUpMenu}) => {
 
 
   // veg //============= ====title,difficulty,space,indoors, time, main Image
+
 let Potato=new Vegetables("id1","Potatoes",1,3,false,1,potatoes)
 let Tomato=new Vegetables("id2","Tomatoes",2,3,false,3,tomatoimgs)
 let Carrot=new Vegetables("id3","Carrot",2,3,false,3,carrots)

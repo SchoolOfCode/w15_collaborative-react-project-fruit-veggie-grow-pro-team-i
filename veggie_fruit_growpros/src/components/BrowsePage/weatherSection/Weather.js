@@ -26,7 +26,6 @@ useEffect(()=>{
     setLocated(data.name)
     setWeatherDescrip(data.weather[0].main)
     setWeatherDescripText(data.weather[0].description)
-    console.log(data)
 
   } catch(error){
     console.log("error",error)
