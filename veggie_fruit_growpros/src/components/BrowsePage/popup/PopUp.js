@@ -1,19 +1,19 @@
-import sowingImg from "../../images/sow_popup.png";
-import growingImg from "../../images/grow_popup.png";
-import harvestingImg from "../../images/harvest_popup.png";
+import sowingImg from "../../images/sow_popup.png"
+import growingImg from "../../images/grow_popup.png"
+import harvestingImg from "../../images/harvest_popup.png"
 
 function PopUp({ popUpID, setpopUpID }) {
-  let paragraph;
-  let link;
-  let sowTitle;
-  let sowImage;
-  let sowDescription;
-  let growTitle;
-  let growImage;
-  let growDescription;
-  let harvestTitle;
-  let harvestImage;
-  let harvestDescription;
+  let paragraph
+  let link
+  let sowTitle
+  let sowImage
+  let sowDescription
+  let growTitle
+  let growImage
+  let growDescription
+  let harvestTitle
+  let harvestImage
+  let harvestDescription
 
   switch (popUpID[2]) {
     case "Tomatoes":
@@ -184,7 +184,7 @@ function PopUp({ popUpID, setpopUpID }) {
       </div>
 
       <main className="PopUpBox">
-        <img src={popUpID[1]} alt="popUpItem" />
+        <img className="PopUpHeaderImg" src={popUpID[1]} alt="popUpItem" />
         <h1 className="PopUpTitle">{popUpID[2]}</h1>
         <p className="popUpDescription">{paragraph}</p>
         <div className="spacer-bottom-gradient"></div>
@@ -197,7 +197,7 @@ function PopUp({ popUpID, setpopUpID }) {
           </ul>
         </section>
 
-        <section className="InstructionsSection">
+        <section className="InstructionsSection lightGreen-bg">
           <section className="InstructionsText">
             <h2 className="PopUpH2">{sowTitle}</h2>
             <p>{sowDescription}</p>
@@ -217,7 +217,7 @@ function PopUp({ popUpID, setpopUpID }) {
           </section>
         </section>
 
-        <section className="InstructionsSection lightGrey-bg">
+        <section className="InstructionsSection lightGreen-bg">
           <section className="InstructionsText">
             <h2 className="PopUpH2">{harvestTitle}</h2>
             <p>{harvestDescription}</p>
