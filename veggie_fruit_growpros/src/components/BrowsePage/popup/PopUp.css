@@ -4,17 +4,17 @@
   text-decoration: none;
 }
 
-.PopUpH2{
-  font-size: 1.8rem;
+.PopUpH2 {
+  font-size: 2rem;
   font-weight: 600;
 }
 
-.PopUpH3{
+.PopUpH3 {
   font-size: 1.4rem;
   font-weight: 500;
 }
 
-.PopUpShell{
+.PopUpShell {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -27,19 +27,19 @@
   background-color: #2a2a2ae5;
 }
 
-.ClosePopUp{
+.ClosePopUp {
   display: flex;
   width: 80%;
   justify-content: flex-end;
 }
 
-.ClosePopUp--button{
+.ClosePopUp--button {
   height: 44px;
   width: 44px;
   font-size: 2rem;
 }
 
-.PopUpBox{
+.PopUpBox {
   width: 70%;
   height: 90%;
   background: white;
@@ -49,23 +49,23 @@
   flex-direction: column;
 }
 
-.PopUpBox img{
+.PopUpBox img {
   width: 100%;
   height:50%;
 }
 
-.PopUpTitle{
+.PopUpTitle {
   text-align: center;
   padding: 40px 60px 15px 60px;
 }
 
-.popUpDescription{
+.popUpDescription {
   text-align: left;
   padding: 15px 60px 0px 60px;
   background-color: white;
 }
 
-.PopUP-Ratings{
+.PopUP-Ratings {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -73,27 +73,27 @@
   padding: 60px 40px 80px 40px;
 }
 
-.PopUP-Ratings h2{
+.PopUP-Ratings h2 {
   text-align: center;
   width: 100%;
   padding: 0px 0px 40px 0px;
 }
 
-.PopUP-Ratings li{
+.PopUP-Ratings li {
   display: flex;
   justify-content: space-evenly;
 }
 
-.PopUP-Ratings h3{
+.PopUP-Ratings h3 {
   text-align: left;
   width:110px;
 }
 
-.PopUP-Ratings img{
+.PopUP-Ratings img {
   width: 90px;
 }
 
-.PopUp-UL-container{
+.PopUp-UL-container {
   display: grid;
   padding: 80px 40px 80px 40px;
   justify-content: space-evenly;
@@ -104,7 +104,7 @@
   padding: 0px 60px 0px 0px;
 }
 
-.PopUp-UL{
+.PopUp-UL {
   padding: 40px 0px 0px 0px;
   columns: 2;
   column-gap: 80px;
@@ -120,17 +120,24 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 6% 6% 6% 6%;
-  background-color: aqua;
+
 }
 
 .InstructionsText {
-  width: 60%;
+  width: 55%;
   text-align: left;
+  margin-right: 3%;
+}
+
+.InstructionsText-RightColumn {
+  width: 55%;
+  text-align: left;
+  margin-left: 3%;
 }
 
 .InstructionsImage {
-  width: 40%;
-  background-color: pink;
+  width: 42%;
+
 }
 
 
