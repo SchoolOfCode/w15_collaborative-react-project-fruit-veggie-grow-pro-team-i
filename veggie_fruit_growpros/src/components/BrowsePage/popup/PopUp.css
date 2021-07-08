@@ -4,9 +4,6 @@
   text-decoration: none;
 }
 
-
-
-
 .PopUpH2{
   font-size: 1.8rem;
   font-weight: 600;
@@ -117,6 +114,29 @@
 .PopUp-Ref {
   padding: 60px 40px 60px 40px;
 }
+
+.InstructionsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 6% 6% 6% 6%;
+  background-color: aqua;
+}
+
+.InstructionsText {
+  width: 60%;
+  text-align: left;
+}
+
+.InstructionsImage {
+  width: 40%;
+  background-color: pink;
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   .PopUpShell{
     z-index: 10;
