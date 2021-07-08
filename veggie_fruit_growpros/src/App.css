@@ -1,3 +1,10 @@
+:root {
+  --colour-dark: #2a2a2a;
+  --colour-secondary-bg: #f1f1f1;
+  --colour-green-accent: #6cad55;
+  --colour-red-accent: #be0b06;
+}
+
 .App {
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
