@@ -60,7 +60,6 @@ a:hover {
 
 .PopUpBox img {
   width: 100%;
-  height:50%;
 }
 
 .PopUpTitle {
@@ -115,20 +114,19 @@ a:hover {
 }
 
 .InstructionsText {
-  width: 55%;
+  width: 53%;
   text-align: left;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 
 .InstructionsText-RightColumn {
-  width: 55%;
+  width: 53%;
   text-align: left;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
 .InstructionsImage {
   width: 42%;
-
 }
 
 
