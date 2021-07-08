@@ -15,8 +15,8 @@ function PopUp({ popUpID, setpopUpID }) {
 
   switch (popUpID[2]) {
     case "Tomatoes":
-      paragraph = "Cherry tomatoes range in size from a thumbtip to the size of a golf ball. Their shape ranges from spherical to slightly oblong to pointed at the bottom. They are often red, but can also be yellow, green, striped, and even black. More oblong cherry tomatoes often share characteristics with plum tomatoes, and are known as grape tomatoes. Cherry tomatoes can be quite sweet (such as the Sungold or Sunsweet yellow varieties), more traditionally acidic, or deep in flavor. They are delicious for snacking, in salads, lightly roasted or grilled, or baked. They require little to no pruning unlike larger tomato plants."
-      link = "https://en.wikipedia.org/wiki/Tomato"
+      paragraph = "Growing your own tomatoes is simple and just a couple of plants will reward you with plenty of delicious tomatoes through the summer. Sow indoors, then plant outdoors in a sunny, sheltered spot, or in a greenhouse. There's a whole array to try, from tiny sweet cherry tomatoes to full-flavoured giant beefsteak types."
+      link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/tomatoes"
       sowTitle = "Sowing"
       sowImage = {tomatoes}
       sowDescription = [
@@ -233,7 +233,7 @@ function PopUp({ popUpID, setpopUpID }) {
 
         <section className="PopUp-Ref">
           <h2 className="PopUpH2">References</h2>
-          <h5><a href={link}>{link}</a></h5>
+          <p><a href={link}>{link}</a></p>
         </section>
       </main>
 

@@ -65,12 +65,12 @@ a:hover {
 
 .PopUpTitle {
   text-align: center;
-  padding: 40px 60px 15px 60px;
+  margin: 8% 8% 2% 8%;
 }
 
 .popUpDescription {
   text-align: left;
-  padding: 15px 60px 0px 60px;
+  margin: 4% 8% 4% 8%;
   background-color: white;
 }
 
@@ -78,7 +78,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 60px 40px 80px 40px;
+  margin: 4% 8% 8% 8%;
 }
 
 .PopUP-Ratings h2 {
@@ -110,7 +110,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 6% 6% 6% 6%;
+  margin: 6% 8% 6% 8%;
 
 }
 
