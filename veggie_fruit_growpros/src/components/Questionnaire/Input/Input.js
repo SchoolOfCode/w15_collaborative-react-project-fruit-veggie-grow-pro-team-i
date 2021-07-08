@@ -31,9 +31,9 @@ const Input = ({header,header2,quest1,quest2,quest3}) => {
             </input>
 
             <select selected="selected" data-set={"indoors-outdoors"} style={{display:quest2}} onChange={(e)=>{getUserValue(e.target)}} name="" id="">
-                <option value="false"></option>
-                <option value="true">indoors</option>
-                <option value="false">outdoors</option>
+                <option value="false's"></option>
+                <option value="indoor's">indoors</option>
+                <option value="outdoors">outdoors</option>
             </select>
 
             <select data-set={"difficulty"} onChange={(e)=>{getUserValue(e.target)}} style={{display:quest3}} name="space" id="">

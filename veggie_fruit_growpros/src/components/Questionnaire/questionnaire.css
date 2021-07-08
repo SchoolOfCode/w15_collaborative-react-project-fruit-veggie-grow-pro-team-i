@@ -60,6 +60,7 @@
 }
 .QInputBoxsContainer-InputBoxs{
     width: 50%;
+    height: 24px;
     text-align: center;
 }
 .QButtonContainer{
