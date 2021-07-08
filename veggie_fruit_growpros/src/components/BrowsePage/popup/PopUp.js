@@ -180,7 +180,7 @@ function PopUp({ popUpID, setpopUpID }) {
     <div style={{ display: "flex", transition: "2s" }} className="PopUpShell">
 
       <div className="ClosePopUp">
-        <button onClick={() => setpopUpID("dontShowPopUpMenu")} className="ClosePopUp--button">X</button>
+        <button onClick={() => setpopUpID("dontShowPopUpMenu")} className="ClosePopUp--button">x</button>
       </div>
 
       <main className="PopUpBox">
