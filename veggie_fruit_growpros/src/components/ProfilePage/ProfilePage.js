@@ -80,7 +80,7 @@ useEffect(()=>{
     <div className="ProfilePage">
       <header className="ProfilePage__header">
         <div className="ProfilePage__header__imgCont">
-          <h1 className="ProfilePage__header__imgCont__border">J</h1>
+          <h1 className="ProfilePage__header__imgCont__border">{localStorage.getItem("name")[0].toUpperCase()}</h1>
         </div>
         <section className="ProfilePage__header__InfoContainer">
           <h1>{localStorage.getItem("name")}</h1>{/* NAME GOES HERE */}

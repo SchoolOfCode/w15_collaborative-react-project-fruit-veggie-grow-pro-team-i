@@ -1,0 +1,17 @@
+.PopAlert{
+  z-index: 20;
+  height: 100px;
+  width: 200px;
+  position: fixed;
+  top: 8%;
+  right: 2%;
+  background: url(/src/components/images/popupmessage.png) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.PopAlert-message{
+  font-size: 1rem;
+}

@@ -6,6 +6,7 @@ import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
 import Footer from "../Footer/Footer";
 import Weather from "./weatherSection/Weather"
+import PopAlert from "../popAlert/PopAler"
 
 
 const BrowsePage = ({changePage}) => {
@@ -23,6 +24,7 @@ const BrowsePage = ({changePage}) => {
     <>
     <div className="BrowsePage">
     <Hero/>
+    <PopAlert/>
     <LandingInfoBlock infoHead={"We are here to help!"} infoBody={true}/>
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       <div className="CardContainer">

@@ -49,6 +49,12 @@ const Questionnaire = ({changePage,setChangePage}) => {
     let [question2,setQuestion2] = useState("none");
     let [question3,setQuestion3] = useState("none");
 
+
+    function onSubmitPopup(){
+
+    }
+
+
     let restartQuest = changePage==="questionnaire"
     useEffect(()=>{
             setQuestion1("inline-block")
@@ -91,6 +97,9 @@ const Questionnaire = ({changePage,setChangePage}) => {
             setInlineVar("none");
             setQuestion1("none")
             setQuestion2("none");
+
+
+            // here
         }
        
 
