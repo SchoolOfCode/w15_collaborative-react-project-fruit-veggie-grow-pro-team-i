@@ -195,18 +195,6 @@ function PopUp({ popUpID, setpopUpID }) {
           </ul>
         </section>
 
-        <section className="PopUp-UL-container">
-          <h2 className="PopUp-UL-Header" className="PopUpH2">What you'll need</h2>
-          <ul className="PopUp-UL">
-            <li>"Compost"</li>
-            <li>"Trowel"</li>
-            <li>"Compost"</li>
-            <li>"I"</li>
-            <li>"HAVE"</li>
-            <li>"NO-IDEA"</li>
-          </ul>
-        </section>
-
         <section className="InstructionsSection">
           <section className="InstructionsText">
             <h2 className="PopUpH2">{sowTitle}</h2>
