@@ -4,6 +4,7 @@ import "./components/BrowsePage/BrowsePage.css";
 import './App.css';
 import Navbar from "./components/NavigationBar/Navbar";
 import Questionnaire from  "./components/Questionnaire/Questionnaire";
+import ProfilePage from './components/ProfilePage/ProfilePage';
 import {useState} from "react"
 
 
@@ -20,6 +21,7 @@ function changePageFunction(pagestring) {
       <Navbar changePageFunction={changePageFunction}/>
       <BrowsePage changePage={changePage}/>
       <Questionnaire changePage={changePage} setChangePage={setChangePage}/>
+      <ProfilePage changePage={changePage}/>
       {/* add a LandingPage here*/}
     </div>
   );

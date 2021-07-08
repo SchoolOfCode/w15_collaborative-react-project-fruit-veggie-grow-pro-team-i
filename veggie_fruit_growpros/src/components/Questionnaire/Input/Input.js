@@ -1,40 +1,65 @@
-import { useState } from "react"
 
-const Input = ({setProfile,header,InlineVar,InlineVar2}) => {
+const Input = ({header,header2,quest1,quest2,quest3}) => {
     // Changing display of select element
 
-    // setProfile(e.target.value)
-    let userName
 
     function getUserValue(input){//<< getting users input
-        console.log(input)
-        if(header === "What's your name?"){
-            userName=input
+        let eachTag=input.dataset.set
+        
+        if(eachTag === "name" ){
+            localStorage.setItem("name",input.value)
         }
-        if(header === "Will you be growing indoors or outdoors?"){
-            console.log("1 , 2 , 3") 
+        if(eachTag === "indoors-outdoors"){
+            localStorage.setItem("Indoors",input.value)
         }
-        if(header === "Describe your current situation"){
-
+        if(eachTag === "space"){
+            localStorage.setItem("space",input.value)
+        }
+        if(eachTag === "difficulty"){
+            localStorage.setItem("diffic",input.value)
+        }
+        if(eachTag === "time"){ 
+            localStorage.setItem("time",input.value)
         }
     }
-    
-    console.log(header)
     return ( 
         <div className="QInputBoxsContainer">
 
             <h4>{header}</h4>
             
-            <input style={{display:InlineVar2}} className="QInputBoxsContainer-InputBoxs" type={"text"} onChange={(e)=>{getUserValue(e.target.value)}}>
+            <input data-set={"name"} style={{display:quest1}} className="QInputBoxsContainer-InputBoxs" type={"text"} onChange={(e)=>{getUserValue(e.target)}}>
             </input>
 
-            <select style={{display:InlineVar}} name="" id="">
-                <option value="">hi</option>
+            <select selected="selected" data-set={"indoors-outdoors"} style={{display:quest2}} onChange={(e)=>{getUserValue(e.target)}} name="" id="">
+                <option value="false"></option>
+                <option value="true">indoors</option>
+                <option value="false">outdoors</option>
             </select>
 
-            <select style={{display:InlineVar}} name="" id="">
-                <option value="">numb2</option>
+            <select data-set={"difficulty"} onChange={(e)=>{getUserValue(e.target)}} style={{display:quest3}} name="space" id="">
+                <option value="1"></option>
+                <option value="1">clean hands</option>
+                <option value="2">dirty hands</option>
+                <option value="3">green fingers</option>
             </select>
+
+            <h4>{header2}</h4>
+
+            <select data-set={"space"} onChange={(e)=>{getUserValue(e.target)}} style={{display:quest2}} name="space" id="">
+                <option value="1"></option>
+                <option value="1">Not Alot</option>
+                <option value="2">Alot</option>
+                <option value="3">eliphant</option>
+            </select>
+
+            <select data-set={"time"} onChange={(e)=>{getUserValue(e.target)}} style={{display:quest3}} name="space" id="">
+                <option value="3"></option>
+                <option value="3">free</option>
+                <option value="2">here n there</option>
+                <option value="1">busy</option>
+            </select>
+
+           
 
         </div>
      );

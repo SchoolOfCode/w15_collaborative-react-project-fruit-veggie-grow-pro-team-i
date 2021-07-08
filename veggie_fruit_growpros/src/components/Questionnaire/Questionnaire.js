@@ -1,7 +1,7 @@
 import "./questionnaire.css";
 import Input from "./Input/Input.js";
 import QImage from "../images/strawberries.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Questionnaire = ({changePage,setChangePage}) => {
     
@@ -27,7 +27,7 @@ const Questionnaire = ({changePage,setChangePage}) => {
             {
                 id: 2,
                 header: "Describe your current situation",
-                questionOne: "What's your level of experience?",
+                questionOne: "level of experience with gardenning?",
                 questionTwo: "How much time could you spare each week?",
                 image: "",
                 buttonOne: "Back",
@@ -43,20 +43,24 @@ const Questionnaire = ({changePage,setChangePage}) => {
                 buttonTwo: ""
             }
         ]
-    const [Profile,setProfile] = useState({
-        name : "",
-        indoors: false,
-        space: 0,
-        experience: 0,
-        time: 0
-    })
 
     let [InlineVar,setInlineVar] = useState("none");
-    let [InlineVar2,setInlineVar2] = useState("inline-block");
-    
+    let [question1,setQuestion1] = useState("inline-block");
+    let [question2,setQuestion2] = useState("none");
+    let [question3,setQuestion3] = useState("none");
+
+    let restartQuest = changePage==="questionnaire"
+    useEffect(()=>{
+            setQuestion1("inline-block")
+            setQuestion2("none")
+            setQuestion3("none")
+    },[restartQuest])
+
+
+
     let [i, setI] = useState(0);
     function changePageQ(plusOrMinus){
-
+        
         if(plusOrMinus){
             setI(i = i + 1);
             if(i === 3){setChangePage("browsepage")}
@@ -64,18 +68,31 @@ const Questionnaire = ({changePage,setChangePage}) => {
         }else{
             setI(i= i - 1)
         }
+        console.log(i)
+       
         if(i === 0){
             setInlineVar("none");
-            setInlineVar2("inline-block")
+
+            setQuestion1("inline-block")
+            setQuestion2("none")
+            setQuestion3("none")
+            
         }else if(i === 1){
             setInlineVar("inline-block");
-            setInlineVar2("none")
+            setQuestion1("none")
+            setQuestion3("none")
+            setQuestion2("inline-block")
         }else if(i === 2){
             setInlineVar("inline-block");
+            setQuestion2("none")
+            setQuestion3("inline-block");
+
         }else if(i === 3){
             setInlineVar("none");
+            setQuestion1("none")
+            setQuestion2("none");
         }
-        console.log(i)
+       
 
     }
 
@@ -89,13 +106,11 @@ const Questionnaire = ({changePage,setChangePage}) => {
 
                 <section className="QInputContainer">
 
-                    <Input header={QNumber[i].questionOne} InlineVar={InlineVar} InlineVar2={InlineVar2}/>
+                    <Input header={QNumber[i].questionOne} header2={QNumber[i].questionTwo} quest1={question1} quest2={question2} quest3={question3}/>
 
                     <section className="QButtonContainer">
-
-                        <button onClick={(e) => {changePageQ(false)}} style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
-
-                        <button onClick={(e) => {changePageQ(true)}} >{QNumber[i].buttonTwo}</button>
+                        <button onClick={() => {changePageQ(false)}} style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
+                        <button onClick={() => {changePageQ(true)}} >{QNumber[i].buttonTwo}</button>
                     </section>
                     
                     
