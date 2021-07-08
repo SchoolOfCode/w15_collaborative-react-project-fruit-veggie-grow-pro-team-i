@@ -66,6 +66,7 @@ a:hover {
 .PopUpTitle {
   text-align: center;
   margin: 6% 8% 2% 8%;
+  font-size: 3rem;
 }
 
 .popUpDescription {
@@ -78,7 +79,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 2% 8% 6% 8%;
+  margin: 1% 8% 6% 8%;
 }
 
 .PopUP-Ratings h2 {

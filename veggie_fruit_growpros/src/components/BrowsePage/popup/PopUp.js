@@ -189,7 +189,6 @@ function PopUp({ popUpID, setpopUpID }) {
         <p className="popUpDescription">{paragraph}</p>
         <div className="spacer-bottom-gradient"></div>
         <section className="PopUP-Ratings">
-          <h2 className="PopUpH2">Rating's</h2>
           <ul>
             <li><h3 className="PopUpH3">Difficulty:</h3><img src={popUpID[3]} alt="" /></li>
             <li><h3 className="PopUpH3">Space:</h3><img src={popUpID[4]} alt="" /></li>
