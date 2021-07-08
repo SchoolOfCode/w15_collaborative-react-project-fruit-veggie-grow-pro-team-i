@@ -24,7 +24,7 @@ const BrowsePage = ({changePage}) => {
     <>
     <div className="BrowsePage">
     <Hero/>
-    <PopAlert/>
+    <PopAlert changePage={changePage}/>
     <LandingInfoBlock infoHead={"We are here to help!"} infoBody={true}/>
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       <div className="CardContainer">
