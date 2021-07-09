@@ -1,5 +1,5 @@
 import BrowsePage from './components/BrowsePage/BrowsePage';
-import "./components/BrowsePage/PopUp/PopUp.css";
+import "./components/BrowsePage/Popup/PopUp.css";
 import "./components/BrowsePage/BrowsePage.css";
 import './App.css';
 import Navbar from "./components/NavigationBar/Navbar";
