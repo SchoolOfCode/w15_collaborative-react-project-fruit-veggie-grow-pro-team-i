@@ -86,7 +86,7 @@ useEffect(()=>{
 },[changePage])
 
   return ( 
-    <div className={profile}>
+    <div className={profile+" mainProfileDiv"}>
       <button className={profile+" Exitbutton"} onClick={()=>{setChangePage("browsepage")}}></button>
       <main className={profile+" profileCenter"}>
         <section className={profile+" profile__topSection"}>

@@ -1,4 +1,4 @@
-.ProfilePage{
+.mainProfileDiv{
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -7,6 +7,8 @@
   right: 0;
   background-color: white;
   transition: 0.7s ease-out;
+  border-left: thin black solid;
+  border-bottom: solid black thin;
   
 }
 
