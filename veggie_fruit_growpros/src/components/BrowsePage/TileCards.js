@@ -54,7 +54,7 @@ const TileCards = ({sortCardState,popUpMenu}) => {
           
         </span>
         <img src={this.img} alt="fruit/veg" className="mainImage"/>
-        <h1 className="CardTitle" >{this.title}</h1>
+        <h2 className="CardTitle" >{this.title}</h2>
         <div className="Cardbox__centreScreen--allCards--leafContainer">
           <h6 className="leafBox-h6">Difficulty</h6>
           <h6 className="leafBox-h6">Space</h6>
