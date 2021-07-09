@@ -60,147 +60,405 @@ function PopUp({ popUpID, setpopUpID }) {
       ]
       break
     case "Potatoes":
-      paragraph = "Potatoes are starchy root vegetables in the Solanaceae, or Nightshade, family, which also includes tomatoes, eggplants, and peppers. They originated in South America, and spread to become a worldwide staple. The leaves and fruit are usually poisonous and the stem tuber is the only edible part once it is cooked. The potato can be cooked in many ways, brewed into alcohol, and also used as the basis for creating bioplastics. More growing information is available in individual species entries."
-      link = "https://en.wikipedia.org/wiki/Potato"
+      paragraph = "Potatoes are hugely versatile and a staple ingredient of many meals in one form or another – boiled, mashed, chipped or baked. Potatoes are classified as being either earlies or maincrops. Early varieties are ready to harvest much sooner than maincrops and are what we call ‘new potatoes’. Maincrop varieties are in the ground a lot longer. They produce a larger harvest and bigger potatoes."
+      link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/potatoes"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "Potatoes are grown from specially prepared ‘seed’ potatoes (or tubers). These are just like potatoes you buy from the supermarket, but they’re certified virus-free. You can buy seed potatoes from late winter onwards. You then start them off indoors by letting them sprout, before they are planted.",
+        <br />,
+        <br />,
+        "It’s important with earlies, and a good idea with maincrops, to ‘chit’ the seed potatoes before planting. This means allowing them to start sprouting shoots.",
+        <br />,
+        <br />,
+        "Stand them rose end up (the end with the most small dents, or eyes) in egg boxes or trays in a light, frost-free place. The potatoes are ready to plant when the shoots are about 3cm (1in) long. With early potatoes, rub off the weakest shoots, leaving four per tuber."
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "Potato plants need ‘earthing up’ as they grow, to protect early shoots from frost damage and ensure the developing potatoes aren’t exposed to light, which turns them green and poisonous.",
+        <br />,
+        <br />,
+        "It’s a simple process – once the stems are about 23cm (9in) tall, draw soil up around them, creating a ridge about 15cm (6in) high. As the stems grow, repeat the process several times. The final height of the ridge should be 20–30cm (8in–1ft).",
+        <br />, 
+        <br />,
+        "Keep the plants well watered in dry weather – particularly once the tubers start to form. Maincrop potatoes benefit from a nitrogen-rich fertiliser around the time of the second earthing up."
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "With earlies, wait until the flowers open or the buds drop. The tubers are ready to harvest when they’re the size of hens’ eggs.",
+        <br />,
+        <br />,
+        "With maincrops for storage, wait until the foliage turns yellow, then cut it down and remove it. Wait for 10 days before harvesting the tubers, and leave them to dry for a few hours before storing."
+      ]
       break
     case "Carrot":
-      paragraph = "The carrot is a root vegetable. It is usually orange in color, but some cultivars are purple, black, red, white, and yellow. The most commonly eaten part of the plant is the taproot, but the greens are sometimes eaten as well. The leaves appear first, and the taproot grows more slowly beneath the soil. Fast-growing cultivars mature within three months of sowing the seed. Slower-maturing cultivars are harvested four months after sowing."
-      link = "https://en.wikipedia.org/wiki/Carrot"
+      paragraph = "Delicious and packed with vitamins, carrots are a traditional grow-your-own favourite. As well as the classic long orange roots, look out for small round carrots and even red, yellow or purple varieties. Carrots are quick and easy to grow, taking up little space, and can even be grown in containers. Sow small batches regularly for cropping from early summer through to autumn."
+      link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/carrots"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "Carrots need an open, sunny site and fertile, well-drained soil. If your soil is stony, shallow or heavy clay, you may end up with stunted or forked carrots, so try short-rooted types. These are also ideal for growing in containers.",
+        <br />, 
+        <br />,
+        "Early cultivars can be sown in February or March under cloches or with similar protection. The main outdoor sowing season is from April to early July. Seed packets will state whether the cultivar is an early or maincrop type.",
+        <br />, 
+        <br />,
+        "Sow the seeds as thinly as possible, 1cm (½in) deep, in rows 15–30cm (6–12in) apart. Thin out seedlings if necessary, aiming for plants 5–7.5cm (2–3in) apart."
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "Carrots are drought resistant so seldom need watering. However, in long dry spells they will benefit from a soaking.",
+        <br />, 
+        <br />,
+        "Fast-growing weeds can crowd out carrots, so hand weed regularly between rows.",
+        <br />, 
+        <br />,
+        "Cover crops with fleece tunnels or put up barriers around them to prevent carrot flies (see below) laying their eggs. Be careful too when weeding or thinning that you don’t crush the foliage, as the smell attracts carrot fly."
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "Carrots are ready about 12–16 weeks after sowing. So from repeated sowings you can enjoy fresh carrots from late spring to autumn.",
+        <br />, 
+        <br />,
+        "Harvest as soon as they’re large enough to use – don’t aim for the largest roots or you’ll sacrifice flavour.",
+        <br />, 
+        <br />,
+        "Lift the roots carefully using a fork if your soil is heavy. "
+      ]
       break
     case "Onion":
-      paragraph = "Yellow onions have with yellow skin and white to yellow flesh. They are members of the Allium family along with garlic and leeks. They have a good balance of sweet and astringency in their flavor, and become sweeter when cooked. Spanish onions are a type of yellow onion that is slightly sweeter and more delicate in flavor. Make sure to choose a variety suited to your day length."
-      link = "https://en.wikipedia.org/wiki/Onion"
+      paragraph = "Onions are such a versatile vegetable – they feature in so many recipes, and growing your own means you’ll always have them to hand. They’re easy to grow from baby onions called sets. Although seed is available, sets are the easiest and quickest way to grow them."
+      link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/onions"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "Onions are usually grown from sets, which are small, immature bulbs. This is the easiest and fastest way to grow them. Sets are readily available in early spring and late summer in garden centres and from online suppliers.",
+        <br />, 
+        <br />,
+        "Before planting, improve the soil by digging in a bucket of garden compost or well-rotted manure for every square metre (yard), and add a high potassium general fertiliser, such as Vitax Q4, at a rate of one handful per square metre/yard.",
+        <br />, 
+        <br />,
+        "Plant the onion sets 5–10cm (2–4in) apart, in rows 25–30cm (10–12in) apart, from mid-March to mid-April or in September. Gently push the sets into soft, well-prepared soil so the tip is just showing. Firm the soil around them and water well."
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "Water if the weather is dry and give an occasional feed with a general liquid fertiliser. Stop watering and feeding once the onions have swollen in mid-summer.",
+        <br />, 
+        <br />,
+        "Weed regularly, as onions don’t grow well if competing with other plants. Taking care not to damage the bulbs if using a hoe – ideally weed by hand.",
+        <br />, 
+        <br />,
+        "Remove any flower stems as soon as they start to form."
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "Onions are ready to harvest when the foliage starts to turn yellow and topple over. For September-planted sets, this will be from July, and for spring-planted sets, it will be from late summer to early autumn. Although it's sometimes suggested to bend over the foliage or gently lift the bulbs to break the roots, this is no longer recommended.",
+        <br />, 
+        <br />,
+        "Instead, lift the bulbs before the foliage completely dies down. Place them on a rack in full sun outdoors or in a well-ventilated greenhouse for about two weeks to ripen. When the foliage is dry and papery, the bulbs can be stored in a light, cool, dry place until needed. Only store perfect, undamaged bulbs. ",
+      ]
       break
     case "Strawberries":
       paragraph = "Strawberries are a hybrid species of the genus Fragaria that produce sweet, bright red fruits. There are three main types of strawberries: 1) summer-fruiting: produce a single, large crop of fruit the year after planting. To grow, transplant plugs or crowns in early spring in rows spaced at least 120cm apart. Pinch off all flowers the first season and train the plant's runners, pressing them into the soil 15-22cm apart from the mother plant. Mulch with straw or pine needles in the fall when the plants have died back. When the plants start to grow back in the spring, move the mulch aside. After harvest the second season, set a lawnmower to about 10cm high and mow, being sure not to damage crowns."
       link = "https://en.wikipedia.org/wiki/Strawberry"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Blueberries":
       paragraph = "Perennial flowering plants with sweet, indigo-colored berries. Blueberry plants are usually erect, prostrate shrubs that range in height from 10cm to 4m high, depending on the cultivar."
       link = "https://en.wikipedia.org/wiki/Blueberry"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Raspberries":
       paragraph = "Raspberries are a perennial plant with erect to trailing canes that often have spines or thorns. The plants produce fruit in their second year of growth, but some 'primocane' varieties exist that flower and fruit their first year. Canes are light green to blue in hue with alternate, compound leaves. Fruits are sweet, many-seeded, and hollow."
       link = "https://en.wikipedia.org/wiki/Raspberry"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Lime":
       paragraph = "	Limes are the fruit of a variety of hybrid citrus trees. There are many species of limes and they do not share a common parent because the Citrus genus hybridizes so easily. Species include Key Lime (Citrus aurantifolia), Australian Desert Lime (Citrus glauca), Persian Lime (Citrus × latifolia) and Kaffir Lime (Citrus hystrix). Limes are generally ellipsoid, lime green, 3-6cm in diameter, and have acidic, tangy, sour juices. The Persian Lime is the most widely produced lime in the world. Most limes cannot tolerate temperatures below 10° C. More growing information is available in individual lime species entries."
       link = "https://en.wikipedia.org/wiki/Lime_(fruit)"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Basil":
       paragraph = "Fragrant and delicious herb with tender green leaves. Great in just about anything - salad, sauces, meat marinades, and even popcorn."
       link = "https://en.wikipedia.org/wiki/Basil"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Mint":
       paragraph = "Mint is a perennial herb with a distinctive taste. It's stems are square-shaped and it has pink, purple, or white flowers. Peppermint, ginger mint, and large apple mint are hybrids of mint. Mint is often grown in pots to prevent it from overtaking the garden with its invasive, spreading rhizome root structure. It's leaves are most aromatic before the plant flowers and can be used fresh, dried, or frozen. Mint's strongly scented leaves confuse the pests of carrots, tomatoes, alliums, and brassicas, and deter flea beetles."
       link = "https://en.wikipedia.org/wiki/Lamiaceae"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Parsley":
       paragraph = "	Parsley is an herb in the Apiaceae family with two main cultivars: flat leafed (or Italian) and curly. Some gardeners feel flat leaf is easier to cultivate since it is more tolerant of rain and sunshine. Curly parsley is more decorative in appearance. Both cultivars can be used fresh or dried to season food."
       link = "https://en.wikipedia.org/wiki/Parsley"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
     case "Dill":
       paragraph = "Dill is an herb wth slender green stems and feathery, delicate leaves. It's flowers are white to yellow. Fresh and dried dill leaves are used to season fish, borscht, and to make pickles. Dill is best when used fresh. It loses its flavor rapidly if dried. Dill seed is also used as a spice."
       link = "https://en.wikipedia.org/wiki/Dill"
       sowTitle = "Sowing"
       sowImage = sowingImg
-      sowDescription = ""
+      sowDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       growTitle = "Growing"
       growImage = growingImg
-      growDescription = ""
+      growDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
-      harvestDescription = ""
+      harvestDescription = [
+        "",
+        <br />, 
+        <br />,
+        "",
+        <br />, 
+        <br />,
+        ""
+      ]
       break
 
     default:
