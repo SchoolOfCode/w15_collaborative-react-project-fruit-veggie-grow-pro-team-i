@@ -1,6 +1,6 @@
 import "./questionnaire.css";
 import Input from "./Input/Input.js";
-import QImage from "../images/strawberries.jpg";
+import QImage from "../images/strawberry.png";
 import { useEffect, useState } from "react";
 
 const Questionnaire = ({changePage,setChangePage}) => {
