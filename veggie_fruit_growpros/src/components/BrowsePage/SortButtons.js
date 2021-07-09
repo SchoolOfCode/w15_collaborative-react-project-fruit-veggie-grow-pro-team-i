@@ -2,7 +2,7 @@ const SortButtons = ({setSortCardState}) => {
   return ( 
 
     <div className="filterDropdown">
-          <button className="filterDropdown--btn">Sort </button>
+          <button className="filterDropdown--btn"></button>
           <div className="filterDropdown-content">
             <button onClick={()=>setSortCardState("default")}>default</button>
             <button onClick={()=>setSortCardState("difficulty")}>difficulty</button>
