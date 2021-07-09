@@ -22,9 +22,10 @@
 }
 
 .Cardbox__centreScreen{
-  width: 80%;
+  width: 1200px;
   height: 100vh;
   display: flex;
+  margin: 0 auto 0 auto;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -46,8 +47,8 @@
 }
 
 .Cardbox__centreScreen--allCards{
-  width: 23%;
-  height: 25%;
+  width: 16vw;
+  height: 45vh;
   border: solid 1px rgb(240, 240, 240) ;
   background-color: white;
 }

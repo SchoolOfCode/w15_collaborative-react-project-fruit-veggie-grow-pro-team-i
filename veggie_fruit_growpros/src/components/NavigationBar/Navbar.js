@@ -5,7 +5,7 @@ import './Navbar.css'
 const Navbar = ({changePageFunction}) => {
     return (
         <>
-        <header className="Nav-Conatainer">
+        <header className="Nav-Container">
         <nav className="NavbarItems">
             <h1 className="navbar-logo">Logo</h1>
             <ul className="nav-menu">
