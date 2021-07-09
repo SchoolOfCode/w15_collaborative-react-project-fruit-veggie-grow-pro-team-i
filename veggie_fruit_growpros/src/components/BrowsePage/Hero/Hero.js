@@ -1,10 +1,11 @@
-import vegImagePlaceholder from "../../images/vegimageplaceholder.jpg"
+
+import videomp4 from "../../images/video.m4v"
 import "./hero.css"
 
 const Hero = () => {
     return (
         <div className="hero-container">
-            <img className="hero-image" alt="Veggy background" src={vegImagePlaceholder}/>
+            <video className="hero-image" alt="Veggy background" src={videomp4} autoPlay muted loop/>
             <section className="hero-container__content-box">
                 <h1 className="hero-container__tilte">We Are awesome</h1>
                 <p className="hero-container__Paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis pariatur tempora eligendi provident rerum voluptatibus nostrum porro placeat sunt!</p>

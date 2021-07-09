@@ -1,8 +1,8 @@
 
 
 import "./PopUp.css"
-import {Info} from "./popUpInfo"
 
+import {Info} from "./popUpInfo"
 
 import sowingImg from "../../images/sow_popup.png";
 import growingImg from "../../images/grow_popup.png";
