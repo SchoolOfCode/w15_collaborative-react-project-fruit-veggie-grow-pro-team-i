@@ -4,12 +4,14 @@
   position: fixed;
   height: 50vh;
   width: 400px;
-  right: 0;
+  right: 5px;
   background-color: white;
   transition: 0.7s ease-out;
   border-left: thin black solid;
-  border-bottom: solid black thin;
-  
+  border-right: thick black solid;
+  border-bottom: solid thick #6cad55;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 10px 10px;
+  z-index: 30;
 }
 
 .profileCenter{
@@ -63,11 +65,17 @@
   
 }
 .profile__Cirlce h5{
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
   height: 100%;
   border-radius: 100px;
-  background-color: turquoise;
-  font-size: 4rem;
+  background-color: #6cad55;
+  border: black thin solid;
+  font-size: 3.5rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .profile__Bottom--title{
   height: 20%;
@@ -78,7 +86,9 @@
   width: 100%;
   background:no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 .Exitbutton{
@@ -93,6 +103,7 @@
   background-image: url(/src/components/images/xIcon.png);
   background-position: center;
   background-size: cover;
+  border: none;
 }
 
 
@@ -110,4 +121,27 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+ 
 
+  .mainProfileDiv{
+    height: 90vh;
+    width: 100%;
+    border-right: none;
+    right: 0;
+    box-shadow: none;
+  }
+
+  .NotProfile{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 0px;
+    width: 30%;
+    right: 50px;
+    
+    visibility: hidden;
+  }
+  
+
+}

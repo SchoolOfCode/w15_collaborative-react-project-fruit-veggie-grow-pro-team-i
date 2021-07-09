@@ -1,6 +1,6 @@
 
 
-
+import "./PopUp.css"
 import {Info} from "./popUpInfo"
 
 

@@ -1,0 +1,46 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image{
+  width: 100%;
+  height: 75vh;
+}
+.hero-container__content-box{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 75vh;
+  width: 80%;
+}
+.hero-container__tilte{
+  width: 100%;
+  text-align: left;
+  font-size: 3rem;
+  color: white;
+}
+.hero-container__Paragraph{
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-container__content-box{
+    display: flex;
+    justify-content: space-evenly;
+    
+    height: 75vh;
+    width: 90%;
+  }
+  .hero-container__Paragraph{
+    
+    width: 90%;
+  }
+ 
+}

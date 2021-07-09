@@ -93,9 +93,9 @@ useEffect(()=>{
           <Circle title={localStorage.getItem("name")} name1={name1}/>
         </section>
         <section className={profile+" profile__midSection"}>
-          <Circle title={"Difficulty"} name1={localStorage.getItem("diffic")} style={{fontSize:"1rem"}}/>
-          <Circle title={"space"} name1={LocSpace}/>
-          <Circle title={"time"} name1={localStorage.getItem("time")} />
+          <Circle title={"Difficulty"} name1={localStorage.getItem("diffic")+"/3"} style={{fontSize:"1rem"}}/>
+          <Circle title={"space"} name1={LocSpace+"/3"}/>
+          <Circle title={"time"} name1={localStorage.getItem("time")+"/3"} />
         </section>
         <section className={profile+" profile__BottomSection"} >
           <h4 className="profile__Bottom--title">Card recommended</h4>
