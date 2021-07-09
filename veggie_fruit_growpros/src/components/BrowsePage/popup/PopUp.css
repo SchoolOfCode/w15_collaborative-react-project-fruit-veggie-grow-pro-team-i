@@ -113,7 +113,7 @@ a:hover {
 
 .PopUp-Ref {
   padding: 60px 40px 60px 40px;
-  background-color: #2a2a2a;
+  background-color: #cccccc;
   color: white;
 }
 
@@ -148,7 +148,18 @@ a:hover {
   background-color: #6cad5515;
 }
 
-
+/* Scrollbar styling */
+.PopUpBox::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+.PopUpBox::-webkit-scrollbar-track {
+  background: #2a2a2a;        /* color of the tracking area */
+}
+.PopUpBox::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #2a2a2a;  /* creates padding around scroll thumb */
+}
 
 
 @media only screen and (max-width: 600px) {
