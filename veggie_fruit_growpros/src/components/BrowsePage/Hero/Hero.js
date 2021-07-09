@@ -1,5 +1,5 @@
 
-import videomp4 from "../../images/video.m4v"
+import videomp4 from "../../images/Videoveg2-1.m4v"
 import "./hero.css"
 
 const Hero = () => {
