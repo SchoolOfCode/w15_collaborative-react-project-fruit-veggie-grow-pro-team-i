@@ -1,6 +1,6 @@
 import { useState } from "react"
 import TileCards from "./TileCards"
-import PopUp from "./popup/PopUp"
+import PopUp from "./PopUp/PopUp"
 import Hero from "../Hero"
 import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";

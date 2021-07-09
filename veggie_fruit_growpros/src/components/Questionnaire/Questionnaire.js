@@ -87,7 +87,7 @@ const Questionnaire = ({changePage}) => {
                     
                 </section>
                 <section className="QImage">
-                    <img src={QImage}></img>
+                    <img src={QImage} alt=""></img>
                 </section>
             </section>
         </main>
