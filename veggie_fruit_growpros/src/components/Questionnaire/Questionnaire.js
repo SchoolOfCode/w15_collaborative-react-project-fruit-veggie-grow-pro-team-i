@@ -125,7 +125,11 @@ const Questionnaire = ({changePage,setChangePage}) => {
                     
                 </section>
                 <section className="QImage">
+
+
+
                     <img src={QImage} alt="plant growing"></img>
+
                 </section>
             </section>
         </main>
