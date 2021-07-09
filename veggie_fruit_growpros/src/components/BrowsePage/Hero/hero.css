@@ -22,11 +22,25 @@
   text-align: left;
   font-size: 3rem;
   color: white;
-  
 }
 .hero-container__Paragraph{
   width: 100%;
   color: white;
   font-size: 2rem;
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-container__content-box{
+    display: flex;
+    justify-content: space-evenly;
+    
+    height: 75vh;
+    width: 90%;
+  }
+  .hero-container__Paragraph{
+    
+    width: 90%;
+  }
+ 
 }
