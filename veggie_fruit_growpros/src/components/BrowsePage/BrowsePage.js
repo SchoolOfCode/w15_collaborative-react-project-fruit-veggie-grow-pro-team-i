@@ -4,10 +4,13 @@ import PopUp from "./PopUp/PopUp"
 import Hero from "../Hero"
 import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
-import Footer from "../Footer";
+import Footer from "../Footer/Footer";
+import Weather from "./weatherSection/Weather"
+import PopAlert from "../popAlert/PopAler"
+import ProfilePage from "./ProfilePage/ProfilePage"
 
 
-const BrowsePage = ({changePage}) => {
+const BrowsePage = ({changePage,setChangePage}) => {
 
   let [sortCardState,setSortCardState] = useState("default")
   let [popUpID,setpopUpID] = useState("dontShowPopUpMenu")
@@ -15,17 +18,16 @@ const BrowsePage = ({changePage}) => {
   // THIS IS WHERE WE WILL BE WORKING for BrowsePage
   function popUpMenu(img,title,difficulty,space,time){
     setpopUpID(["display",img,title,difficulty,space,time])
-  }
-
-
+  }  
   
-  
-  return changePage === "browsepage" ? ( 
+  return changePage === "browsepage" || changePage === "popup" ? ( 
 
     <>
+    <ProfilePage changePage={changePage} setChangePage={setChangePage}/>
     <div className="BrowsePage">
     <Hero/>
-    <LandingInfoBlock/>
+    <PopAlert changePage={changePage}/>
+    <LandingInfoBlock infoHead={"We are here to help!"} infoBody={true}/>
     <PopUp popUpID={popUpID} setpopUpID={setpopUpID} />
       <div className="CardContainer">
         <section className="Cardbox__centreScreen">
@@ -33,6 +35,8 @@ const BrowsePage = ({changePage}) => {
         </section>
         <SortButtons setSortCardState={setSortCardState}/>
       </div>
+      <LandingInfoBlock infoHead={"Thirsty plants?"} infoBody={false}/>
+      <Weather/>
       <Footer/>
     </div>
     </>

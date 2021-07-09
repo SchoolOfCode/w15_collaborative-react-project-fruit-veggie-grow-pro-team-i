@@ -12,14 +12,15 @@ function App() {
   const [changePage, setChangePage] = useState("questionnaire");
   
 function changePageFunction(pagestring) {
-  setChangePage(pagestring)
+  setChangePage(pagestring)  
 }
 
   return (
     <div className="App">
       <Navbar changePageFunction={changePageFunction}/>
-      <BrowsePage changePage={changePage}/>
-      <Questionnaire changePage={changePage}/>
+      <BrowsePage changePage={changePage} setChangePage={setChangePage}/>
+      <Questionnaire changePage={changePage} setChangePage={setChangePage}/>
+      
       {/* add a LandingPage here*/}
     </div>
   );

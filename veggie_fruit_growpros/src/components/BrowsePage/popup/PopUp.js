@@ -1,6 +1,13 @@
-import sowingImg from "../../images/sow_popup.png"
-import growingImg from "../../images/grow_popup.png"
-import harvestingImg from "../../images/harvest_popup.png"
+
+
+
+import {Info} from "./popUpInfo"
+
+
+import sowingImg from "../../images/sow_popup.png";
+import growingImg from "../../images/grow_popup.png";
+import harvestingImg from "../../images/harvest_popup.png";
+
 
 function PopUp({ popUpID, setpopUpID }) {
   let paragraph
@@ -17,7 +24,8 @@ function PopUp({ popUpID, setpopUpID }) {
 
   switch (popUpID[2]) {
     case "Tomatoes":
-      paragraph = "Growing your own tomatoes is simple and just a couple of plants will reward you with plenty of delicious tomatoes through the summer. Sow indoors, then plant outdoors in a sunny, sheltered spot, or in a greenhouse. There's a whole array to try, from tiny sweet cherry tomatoes to full-flavoured giant beefsteak types."
+      paragraph = Info.tomato.paragraph
+
       link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/tomatoes"
       sowTitle = "Sowing"
       sowImage = sowingImg
@@ -58,8 +66,10 @@ function PopUp({ popUpID, setpopUpID }) {
         <br />,
         "At the end of the growing season, lift outdoor plants with unripe fruit and either lay them on straw under cloches or pick the fruits and place somewhere warm and dark to ripen. Alternatively, put unripe tomatoes in a drawer with a banana, to aid ripening."
       ]
+
       break
     case "Potatoes":
+
       paragraph = "Potatoes are hugely versatile and a staple ingredient of many meals in one form or another – boiled, mashed, chipped or baked. Potatoes are classified as being either earlies or maincrops. Early varieties are ready to harvest much sooner than maincrops and are what we call ‘new potatoes’. Maincrop varieties are in the ground a lot longer. They produce a larger harvest and bigger potatoes."
       link = "https://www.rhs.org.uk/advice/grow-your-own/vegetables/potatoes"
       sowTitle = "Sowing"
@@ -450,6 +460,7 @@ function PopUp({ popUpID, setpopUpID }) {
         <br />,
         "The seeds can be gathered in late summer when they start to ripen and turn brown – cut whole stems and put the seedhead in a paper bag, then hang the stems upside down until the seeds dry and drop. Remove any bits of stem, then store the seeds in an air-tight container. The seeds can be used ground or whole. "
       ]
+
       break
 
     default:
@@ -478,7 +489,9 @@ function PopUp({ popUpID, setpopUpID }) {
           </ul>
         </section>
 
+
         <section className="InstructionsSection lightGreen-bg">
+
           <section className="InstructionsText">
             <h2 className="PopUpH2">{sowTitle}</h2>
             <p>{sowDescription}</p>
@@ -506,6 +519,7 @@ function PopUp({ popUpID, setpopUpID }) {
           <section className="InstructionsImage">
             <img src={harvestImage} alt="Crops being harvested."></img>
           </section>
+
         </section>
 
         <section className="PopUp-Ref">

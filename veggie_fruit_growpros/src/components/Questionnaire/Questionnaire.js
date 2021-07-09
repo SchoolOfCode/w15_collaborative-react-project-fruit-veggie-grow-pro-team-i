@@ -1,11 +1,11 @@
 import "./questionnaire.css";
 import Input from "./Input/Input.js";
 import QImage from "../images/strawberries.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const Questionnaire = ({changePage}) => {
-    const [QNumber, setQNumber] = useState(
-        [
+const Questionnaire = ({changePage,setChangePage}) => {
+    
+    const QNumber=[
             {
                 id: 0,
                 header: "Let's get started",
@@ -27,7 +27,7 @@ const Questionnaire = ({changePage}) => {
             {
                 id: 2,
                 header: "Describe your current situation",
-                questionOne: "What's your level of experience?",
+                questionOne: "level of experience with gardenning?",
                 questionTwo: "How much time could you spare each week?",
                 image: "",
                 buttonOne: "Back",
@@ -43,28 +43,66 @@ const Questionnaire = ({changePage}) => {
                 buttonTwo: ""
             }
         ]
-    );
-    const [Profile,setProfile] = useState({
-        name : "",
-        indoors: false,
-        space: 0,
-        experience: 0,
-        time: 0
-    })
 
     let [InlineVar,setInlineVar] = useState("none");
+    let [question1,setQuestion1] = useState("inline-block");
+    let [question2,setQuestion2] = useState("none");
+    let [question3,setQuestion3] = useState("none");
+
+
+    function onSubmitPopup(){
+
+    }
+
+
+    let restartQuest = changePage==="questionnaire"
+    useEffect(()=>{
+            setQuestion1("inline-block")
+            setQuestion2("none")
+            setQuestion3("none")
+    },[restartQuest])
+
+
 
     let [i, setI] = useState(0);
-    
-    
-    function changePageAndObject(){
-        setI(i = i + 1);
-        if(i === 3){setI(0);}
-        if(i === 3){
-            setInlineVar("none");
+    function changePageQ(plusOrMinus){
+        
+        if(plusOrMinus){
+            setI(i = i + 1);
+            if(i === 3){setChangePage("browsepage")}
+            if(i === 3){setI(0);}
         }else{
-            setInlineVar("inline-block");
+            setI(i= i - 1)
         }
+        console.log(i)
+       
+        if(i === 0){
+            setInlineVar("none");
+
+            setQuestion1("inline-block")
+            setQuestion2("none")
+            setQuestion3("none")
+            
+        }else if(i === 1){
+            setInlineVar("inline-block");
+            setQuestion1("none")
+            setQuestion3("none")
+            setQuestion2("inline-block")
+        }else if(i === 2){
+            setInlineVar("inline-block");
+            setQuestion2("none")
+            setQuestion3("inline-block");
+
+        }else if(i === 3){
+            setInlineVar("none");
+            setQuestion1("none")
+            setQuestion2("none");
+
+
+            // here
+        }
+       
+
     }
 
     return changePage === "questionnaire" ? ( 
@@ -77,17 +115,21 @@ const Questionnaire = ({changePage}) => {
 
                 <section className="QInputContainer">
 
-                    <Input header={QNumber[i].header} />
+                    <Input header={QNumber[i].questionOne} header2={QNumber[i].questionTwo} quest1={question1} quest2={question2} quest3={question3}/>
 
                     <section className="QButtonContainer">
-                        <button style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
-                        <button onClick={(e) => {changePageAndObject()}}>{QNumber[i].buttonTwo}</button>
+                        <button onClick={() => {changePageQ(false)}} style={{display:InlineVar}}>{QNumber[i].buttonOne}</button>
+                        <button onClick={() => {changePageQ(true)}} >{QNumber[i].buttonTwo}</button>
                     </section>
                     
                     
                 </section>
                 <section className="QImage">
-                    <img src={QImage} alt=""></img>
+
+
+
+                    <img src={QImage} alt="plant growing"></img>
+
                 </section>
             </section>
         </main>

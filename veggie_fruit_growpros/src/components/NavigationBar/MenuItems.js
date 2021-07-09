@@ -1,10 +1,5 @@
 export const MenuItems = [
     {
-        title: 'Home',
-        function: 'browsepage',
-        className: 'nav-links'
-    },
-    {
         title: 'Browse',
         function: 'browsepage',
         className: 'nav-links'
@@ -12,6 +7,11 @@ export const MenuItems = [
     {
         title: 'Questionnaire',
         function: "questionnaire",
+        className: 'nav-links'
+    },
+    {
+        title: 'Profile',
+        function: "popup",
         className: 'nav-links'
     },
 

@@ -1,4 +1,4 @@
-import vegImagePlaceholder from "../components/images/tomatoes-hero-placeholder.jpg"
+import vegImagePlaceholder from "../components/images/vegimageplaceholder.jpg"
 
 const Hero = () => {
     return (
