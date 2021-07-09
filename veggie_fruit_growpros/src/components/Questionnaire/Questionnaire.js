@@ -1,6 +1,12 @@
 import "./questionnaire.css";
 import Input from "./Input/Input.js";
-import QImage from "../images/strawberry.png";
+
+
+import strawberry from "../images/strawberry.png";
+import potato from "../images/tomato.png"
+import blueberry from "../images/blueberry.png"
+
+
 import { useEffect, useState } from "react";
 
 const Questionnaire = ({changePage,setChangePage}) => {
@@ -11,7 +17,7 @@ const Questionnaire = ({changePage,setChangePage}) => {
                 header: "Let's get started",
                 questionOne: "What's your name?",
                 questionTwo: "",
-                image: "",
+                image: strawberry,
                 buttonOne: "hideThisButton",
                 buttonTwo: "Next"
             },
@@ -20,7 +26,7 @@ const Questionnaire = ({changePage,setChangePage}) => {
                 header: "Describe your growing space",
                 questionOne: "Will you be growing indoors or outdoors?",
                 questionTwo: "Which best describes your space?",
-                image: "",
+                image: potato,
                 buttonOne: "Back",
                 buttonTwo: "Next"
             },
@@ -29,7 +35,7 @@ const Questionnaire = ({changePage,setChangePage}) => {
                 header: "Describe your current situation",
                 questionOne: "level of experience with gardenning?",
                 questionTwo: "How much time could you spare each week?",
-                image: "",
+                image: blueberry,
                 buttonOne: "Back",
                 buttonTwo: "Submit"
             },
@@ -57,6 +63,7 @@ const Questionnaire = ({changePage,setChangePage}) => {
     },[restartQuest])
 
 
+    // let [QchangingIMG,setChangingIMG] = useState
 
     let [i, setI] = useState(0);
     function changePageQ(plusOrMinus){
@@ -122,7 +129,7 @@ const Questionnaire = ({changePage,setChangePage}) => {
 
 
 
-                    <img src={QImage} alt="plant growing"></img>
+                    <img src={QNumber[i].image} alt="plant growing"></img>
 
                 </section>
             </section>
