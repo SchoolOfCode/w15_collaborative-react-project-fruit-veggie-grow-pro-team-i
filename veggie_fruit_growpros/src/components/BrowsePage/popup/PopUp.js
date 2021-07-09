@@ -165,114 +165,114 @@ function PopUp({ popUpID, setpopUpID }) {
       ]
       break
     case "Strawberries":
-      paragraph = "Strawberries are a hybrid species of the genus Fragaria that produce sweet, bright red fruits. There are three main types of strawberries: 1) summer-fruiting: produce a single, large crop of fruit the year after planting. To grow, transplant plugs or crowns in early spring in rows spaced at least 120cm apart. Pinch off all flowers the first season and train the plant's runners, pressing them into the soil 15-22cm apart from the mother plant. Mulch with straw or pine needles in the fall when the plants have died back. When the plants start to grow back in the spring, move the mulch aside. After harvest the second season, set a lawnmower to about 10cm high and mow, being sure not to damage crowns."
-      link = "https://en.wikipedia.org/wiki/Strawberry"
+      paragraph = "Strawberries are incredibly easy to grow. Strawberry plants can be grown almost anywhere – in borders, containers or hanging baskets. And of course the fruit is extremely popular – home-grown strawberries taste delicious and are great value too! "
+      link = "https://www.rhs.org.uk/advice/grow-your-own/fruit/strawberries"
       sowTitle = "Sowing"
       sowImage = sowingImg
       sowDescription = [
-        "",
+        "Strawberries are so versatile – they just need sun, shelter, and fertile, well-drained soil. Avoid areas prone to frost and soils that have previously grown potatoes, chrysanthemums, or tomatoes because they are all prone to the disease verticillium wilt. ",
         <br />, 
         <br />,
-        "",
+        "Strawberries are traditionally grown in rows directly into garden soil. In poor soils grow in raised beds, which improves drainage and increases rooting depth. Alternatively, try growing in containers or growing-bags. ",
         <br />, 
         <br />,
-        ""
+        "Strawberries for sale in pots or packs (normally from late spring onwards) can be planted as soon as you buy them. "
       ]
       growTitle = "Growing"
       growImage = growingImg
       growDescription = [
-        "",
+        "Water frequently while new plants are establishing. Also water during dry periods in the growing season. Try to avoid wetting crowns and fruit as this can promote disease.",
         <br />, 
         <br />,
-        "",
+        "In early spring, feed with a high potassium general fertiliser, such as Vitax Q4. Scatter half a handful per square metre/yard around the plants. Additionally, feed strawberry plants growing in containers and grow bags with a high potassium liquid feed, such as tomato feed, every 7 to 14 days throughout the growing season.",
         <br />, 
         <br />,
-        ""
+        "After cropping has finished, cut off old leaves from summer-fruiting strawberries to allow fresh leaves to develop. This isn't necessary with autumn fruiting plants, instead just remove old leaves in the end of season clear up. Also remove the straw mulch, fibre mat, or black polythene, to prevent a build-up of pests and diseases. Take off any netting so birds can feed on any pests. "
       ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
       harvestDescription = [
-        "",
+        "Strawberries ripen from early summer to early autumnm, depending on the variety.",
         <br />, 
         <br />,
-        "",
+        "Pick when they’re bright red all over, ideally during the warmest part of the day as this is when they’re at their most tasty.",
         <br />, 
         <br />,
-        ""
+        "Eat them as soon as possible – they don’t keep well once ripe. Most don’t hold their shape when frozen."
       ]
       break
     case "Blueberries":
-      paragraph = "Perennial flowering plants with sweet, indigo-colored berries. Blueberry plants are usually erect, prostrate shrubs that range in height from 10cm to 4m high, depending on the cultivar."
-      link = "https://en.wikipedia.org/wiki/Blueberry"
+      paragraph = "Not only are blueberries productive, their glorious autumn colours provide ornamental appeal. The fruit is delicious and high in antioxidants. Shrubs can be grown in the garden border or as attractive container plants."
+      link = "https://www.rhs.org.uk/advice/grow-your-own/fruit/blueberries"
       sowTitle = "Sowing"
       sowImage = sowingImg
       sowDescription = [
-        "",
+        "Plant in a moist, well-drained, acidic soil. Blueberries prefer light soils rather than heavy clays. Choose a sunny, sheltered spot. While blueberries are tolerant of shade, better crops (and autumn colour) are obtained in the sun.",
         <br />, 
         <br />,
-        "",
+        "Blueberries are very fussy about soil acidity. They will not grow well if planted in alkaline soil. Soil acidity can be measured by a pH testing kit. You can buy these from most garden centres. The pH of your soil needs to be pH 5.5 or lower for blueberries to thrive. If your soil is marginally higher than this, you can try lowering the pH by adding sulphur chips well in advance of planting.",
         <br />, 
         <br />,
-        ""
+        "While some blueberry cultivars can produce a good crop on their own, all yield much more heavily if planted near another, different cultivar. Check the labels on the plants when you buy."
       ]
       growTitle = "Growing"
       growImage = growingImg
       growDescription = [
-        "",
+        "Blueberries are relatively easy to look after. Keep the compost or soil moist, but not soaking wet. Don’t allow it to dry out between waterings. Water plants with rainwater, not tap water, unless you have no alternative in a drought. Tap water will raise the pH level and blueberries like acidic conditions.",
         <br />, 
         <br />,
-        "",
+        "Ensure the soil stays at pH of 5.5 or lower, to avoid problems. Check the pH of the soil in spring and add sulphur chips if it needs lowering. This shouldn’t be necessary with container-grown plants provided ericaceous fertiliser and rainwater are used.",
         <br />, 
         <br />,
-        ""
+        "Feed container plants every month using a liquid fertiliser formulated for ericaceous (lime-hating) plants, following the manufacturer’s recommendations.",
+        <br />, 
+        <br />,
+        "You may find open ground plants don't need feeding apart from the annual ericaceous mulch and a high nitrogen feed such as sulphate of ammonia in late winter. Blueberries are sensitive to overfeeding.",
+        <br />, 
+        <br />,
+        "Pruning is rarely needed in the first two years. After that you should prune in late February to early March. Once you start pruning, you should aim to remove a quarter of old wood at the base every year to keep the plant productive."
       ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
       harvestDescription = [
-        "",
+        "The berries start to ripen from mid-summer onwards, changing from green to dusky blue when ready to pick. They won’t all ripen at once, so check over plants several times.",
         <br />, 
         <br />,
-        "",
-        <br />, 
-        <br />,
-        ""
+        "Blueberries can be eaten fresh or can be dried, frozen, made into preserves or used in cooking. They are rich in antioxidants and vitamins (especially vitamin C).",
       ]
       break
     case "Raspberries":
-      paragraph = "Raspberries are a perennial plant with erect to trailing canes that often have spines or thorns. The plants produce fruit in their second year of growth, but some 'primocane' varieties exist that flower and fruit their first year. Canes are light green to blue in hue with alternate, compound leaves. Fruits are sweet, many-seeded, and hollow."
-      link = "https://en.wikipedia.org/wiki/Raspberry"
+      paragraph = "Raspberries are popular garden fruits that are easy to grow. Try growing both summer and autumn-fruiting varieties: just a few plants will reward you with plenty of fruit from midsummer until mid autumn. If you end up with a glut, raspberries also freeze well, and make wonderful jams, sauces and cooked desserts. "
+      link = "https://www.rhs.org.uk/advice/grow-your-own/fruit/raspberries"
       sowTitle = "Sowing"
       sowImage = sowingImg
       sowDescription = [
-        "",
+        "Raspberries can be planted any time during the dormant season, between November and March, providing the soil is not frozen or waterlogged. They are sold as either: bare-root canes (the roots are exposed when you buy, usually mail order) or in containers.",
         <br />, 
         <br />,
-        "",
-        <br />, 
-        <br />,
-        ""
+        "Most people grow summer-fruiting raspberries, which are ready for harvesting in early summer. You can also buy autumn-fruiting raspberries, which are ready for harvest from late August to October.",
       ]
       growTitle = "Growing"
       growImage = growingImg
       growDescription = [
-        "",
+        "Raspberries thrive in moisture-retentive, fertile, slightly acidic soils, which are well-drained and weed free. They dislike soggy soils and shallow chalky soils. For best results, plant in a sunny position (although they will tolerate part shade). Ideally, site your rows running north to south, so that they do not shade each other.",
         <br />, 
         <br />,
-        "",
+        "Raspberry flowers are self-fertile and pollinated by insects, so avoid a very windy site. Also, the fruiting side branches of some cultivars are very long and may break in the wind. ",
         <br />, 
         <br />,
-        ""
+        "Keep raspberries well-watered during dry periods. "
       ]
       harvestTitle = "Harvesting"
       harvestImage = harvestingImg
       harvestDescription = [
-        "",
+        "The first summer raspberries are ready for harvesting in early summer, while autumn raspberries won’t mature until late summer, often continuing until the first frosts.",
         <br />, 
         <br />,
-        "",
+        "Harvest regularly, to get fruits at the peak of ripeness, when richly coloured, plump and easy to pull off. Pick on a dry day, so the berries aren’t wet.",
         <br />, 
         <br />,
-        ""
+        "Eat them fresh, freeze them or make into preserves. "
       ]
       break
     case "Lime":
