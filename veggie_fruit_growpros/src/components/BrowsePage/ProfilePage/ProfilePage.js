@@ -12,11 +12,6 @@ import parsley from "../../images/parsley.png"
 import Strawberry from "../../images/strawberry.png"
 import Blueberries from "../../images/blueberry.png"
 
-
-
-
-
-
 const ProfilePage = ({changePage,setChangePage}) => {
 
 

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import TileCards from "./TileCards"
-import PopUp from "./PopUp/PopUp"
+import PopUp from "./Popup/PopUp"
 import Hero from "./Hero/Hero"
 import LandingInfoBlock  from "./LandingInfoBlock/LandingInfoBlock"
 import SortButtons from "./SortButtons";
@@ -8,7 +8,6 @@ import Footer from "../Footer/Footer";
 import Weather from "./weatherSection/Weather"
 import PopAlert from "../popAlert/PopAler"
 import ProfilePage from "./ProfilePage/ProfilePage"
-
 
 const BrowsePage = ({changePage,setChangePage}) => {
 
