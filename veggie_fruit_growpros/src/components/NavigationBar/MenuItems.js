@@ -11,7 +11,7 @@ export const MenuItems = [
     },
     {
         title: 'Profile',
-        function: "Profile",
+        function: "popup",
         className: 'nav-links'
     },
 

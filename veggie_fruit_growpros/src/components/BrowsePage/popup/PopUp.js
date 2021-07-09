@@ -12,8 +12,15 @@ import harvestingImg from "../../images/harvest_popup.png";
 function PopUp({ popUpID, setpopUpID }) {
   let paragraph
   let link
-
-  console.log(Info)
+  let sowTitle;
+  let sowImage;
+  let sowDescription;
+  let growTitle;
+  let growImage;
+  let growDescription;
+  let harvestTitle;
+  let harvestImage;
+  let harvestDescription;
 
   switch (popUpID[2]) {
     case "Tomatoes":

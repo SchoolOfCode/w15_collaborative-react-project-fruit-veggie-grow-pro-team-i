@@ -7,9 +7,10 @@ import SortButtons from "./SortButtons";
 import Footer from "../Footer/Footer";
 import Weather from "./weatherSection/Weather"
 import PopAlert from "../popAlert/PopAler"
+import ProfilePage from "./ProfilePage/ProfilePage"
 
 
-const BrowsePage = ({changePage}) => {
+const BrowsePage = ({changePage,setChangePage}) => {
 
   let [sortCardState,setSortCardState] = useState("default")
   let [popUpID,setpopUpID] = useState("dontShowPopUpMenu")
@@ -17,11 +18,12 @@ const BrowsePage = ({changePage}) => {
   // THIS IS WHERE WE WILL BE WORKING for BrowsePage
   function popUpMenu(img,title,difficulty,space,time){
     setpopUpID(["display",img,title,difficulty,space,time])
-  }
+  }  
   
-  return changePage === "browsepage" ? ( 
+  return changePage === "browsepage" || changePage === "popup" ? ( 
 
     <>
+    <ProfilePage changePage={changePage} setChangePage={setChangePage}/>
     <div className="BrowsePage">
     <Hero/>
     <PopAlert changePage={changePage}/>

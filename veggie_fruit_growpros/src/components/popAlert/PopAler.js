@@ -16,15 +16,12 @@ const PopAlert = ({changePage}) => {
     setTimeout(() => {
       setPopup("dontshow")
       count++
-    }, 3000);
+    }, 2500);
 
   },[changePage])
 
-  if(count >1){
-    console.log("this 123")
-  }
-
-  return showpopup==="showpopup" && count == 0?( 
+  
+  return showpopup==="showpopup" && count === 0?( 
     <div className="PopAlert">
       <h1 className="PopAlert-message">View Profile</h1>
     </div>
