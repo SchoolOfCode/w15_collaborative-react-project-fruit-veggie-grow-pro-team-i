@@ -36,3 +36,7 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.nav-logo {
+    margin-left: 40px;
+}

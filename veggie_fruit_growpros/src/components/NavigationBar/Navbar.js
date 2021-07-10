@@ -8,7 +8,7 @@ const Navbar = ({changePageFunction}) => {
         <>
         <header className="Nav-Container">
         <nav className="NavbarItems">
-            <img src={Logo} alt="Growpro logo"></img>
+            <img className="nav-logo" src={Logo} alt="Growpro logo"></img>
             <ul className="nav-menu">
                 {MenuItems.map((item, index) => {
                     return (
