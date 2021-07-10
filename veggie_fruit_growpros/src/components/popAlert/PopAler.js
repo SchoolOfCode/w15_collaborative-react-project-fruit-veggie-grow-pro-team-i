@@ -22,8 +22,10 @@ const PopAlert = ({changePage}) => {
 
   
   return showpopup==="showpopup" && count === 0?( 
-    <div className="PopAlert">
-      <h1 className="PopAlert-message">View Profile</h1>
+    <div className="PopAlert_container">
+      <div className="PopAlert">
+        <h1 className="PopAlert-message">View Profile</h1>
+      </div>
     </div>
    ):<></>
 }

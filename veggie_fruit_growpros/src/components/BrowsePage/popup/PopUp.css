@@ -29,10 +29,14 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 89.6vh;
-  width: 100vw;
+  
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  height: 92vh;
+  width: 1200px;
   background-color: #2a2a2ae5;
 }
 
@@ -163,6 +167,26 @@ a:hover {
   background-color: white;    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid #2a2a2a;  /* creates padding around scroll thumb */
+}
+
+@media screen and (min-width: 601px) and (max-width: 1199px){
+  .PopUpShell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+    height: 92vh;
+    width: 100vw;
+    background-color: #2a2a2ae5;
+  }
+
 }
 
 
