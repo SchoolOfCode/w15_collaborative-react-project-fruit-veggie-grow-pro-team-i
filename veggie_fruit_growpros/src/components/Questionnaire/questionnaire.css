@@ -116,3 +116,31 @@
     
   
   }
+  @media only screen and (max-width: 600px) {
+
+    .QPage {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 91vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        background:url(/src/components/images/vegimageplaceholder.jpg);
+        background-size: cover;
+    }
+    
+    .QMain {
+        /* this is the main container for the questionnaire */
+        height: 80%;
+        width: 90%;
+        max-height: 600px;
+        max-width: 100%;
+        background-color: white;
+        border: thin solid black;
+    }
+    
+    
+  }
