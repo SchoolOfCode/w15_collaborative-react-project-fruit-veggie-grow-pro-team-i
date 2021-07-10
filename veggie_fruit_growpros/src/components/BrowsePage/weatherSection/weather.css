@@ -5,7 +5,10 @@
   height: 25vh;
   width: 100%;
   flex-wrap: wrap;
+  background-image: linear-gradient(180deg, #fff, #f4f5f9);
+  padding: 0px 0px 140px 0px;
 }
+
 .WeatherContainer-left{
   display: flex;
   align-items: center;
@@ -51,17 +54,18 @@
   justify-content: space-between;
   width: 90%;
   height: 15%;
+  padding: 60px 0px 0px 0px;
 }
 .WeatherContainer-Input{
   text-align: center;
   width: 84%;
-  height: 80%;
+  height: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px 0px;
 
 }
 .WeatherContainer-button{
   width: 14%;
-  height: 90%;
+  height: 100%;
   background-color: #ceefcd;
   background-image: linear-gradient(90deg,#ffffff  0%, #bae6b9 100%);
 }
