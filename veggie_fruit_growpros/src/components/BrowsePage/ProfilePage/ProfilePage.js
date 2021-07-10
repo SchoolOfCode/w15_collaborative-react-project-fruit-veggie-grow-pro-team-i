@@ -81,6 +81,7 @@ useEffect(()=>{
 },[changePage])
 
   return ( 
+    <div className="profilePagewidth">
     <div className={profile+" mainProfileDiv"}>
       <button className={profile+" Exitbutton"} onClick={()=>{setChangePage("browsepage")}}></button>
       <main className={profile+" profileCenter"}>
@@ -98,6 +99,7 @@ useEffect(()=>{
           <h1 className={"cardImg"} style={{backgroundImage: `url(${choseImg})`}}>.</h1>
         </section>
       </main>
+    </div>
     </div>
    )
 }
