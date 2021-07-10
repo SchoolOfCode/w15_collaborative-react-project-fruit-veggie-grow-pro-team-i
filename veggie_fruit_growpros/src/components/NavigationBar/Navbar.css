@@ -9,8 +9,10 @@
     position: fixed;
     display: flex;
     background-color: white;
+
     width: 1200px;
     height: 80px;
+
     border-bottom: solid thick #6cad55;
     justify-content: center;
     justify-content: space-between;
@@ -38,6 +40,9 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.nav-logo {
+    margin-left: 40px;
 
 @media screen and (min-width: 601px) and (max-width: 1199px){
     .Nav-Container{
@@ -89,4 +94,5 @@
     width: 100%;
    
 }
+
 }

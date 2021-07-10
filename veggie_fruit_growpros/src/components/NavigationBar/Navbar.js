@@ -1,5 +1,6 @@
 import { MenuItems } from "./MenuItems"
 import './Navbar.css'
+import Logo from "../images/nav-logo.png"
 
 
 const Navbar = ({changePageFunction}) => {
@@ -7,7 +8,7 @@ const Navbar = ({changePageFunction}) => {
         <>
         <header className="Nav-Container">
         <nav className="NavbarItems">
-            <h1 className="navbar-logo">Logo</h1>
+            <img className="nav-logo" src={Logo} alt="Growpro logo"></img>
             <ul className="nav-menu">
                 {MenuItems.map((item, index) => {
                     return (
