@@ -122,7 +122,7 @@
 .filterDropdown {
   width: 100px;
   right: 0%;
-  height: 100%;
+  
 }
 
 .filterDropdown--btn {
@@ -223,12 +223,21 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .leafBox-h6{
+    font-size: 0.7rem;
+  }
   .leafimage{
     max-width: 80%;
     height: 70%;
   }
   .filterDropdown {
     position:absolute;
+    
+    
+  }
+  .filterDropdown--btn{
+    margin-top: 0;
+    height: 40px;
   }
   
 }

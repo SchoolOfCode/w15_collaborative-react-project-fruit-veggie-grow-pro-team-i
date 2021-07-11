@@ -192,6 +192,7 @@ text-align: center;
 
 @media only screen and (max-width: 600px) {
   .PopUpShell{
+    width: 100vw;
     z-index: 10;
     justify-content: space-between;
   }
@@ -209,5 +210,20 @@ text-align: center;
     display: flex;
     width: 100%;
     justify-content: flex-end;
+  }
+  .InstructionsSection{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .InstructionsSection::nth-child(2){
+    flex-direction: column-reverse;
+  }
+
+  .InstructionsText{
+    width: 95%;
+  }
+  .InstructionsImage{
+    width: 96%;
   }
 }
