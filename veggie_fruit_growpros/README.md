@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Team Gro Pro
 
-## Available Scripts
+![alt text](./src/components/images/nav-logo.png "Logo Title Text 1")
 
-In the project directory, you can run:
+Team Gro Pro's main aim is to help push the groth and accesibilty of growing Fruit, Vegetables and Herbs at home during the pandemic
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Authors 
+* Jordan Linton
+* Jamie Hannah
+* Jack Brown
+* Yonis Elmi
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+## Guide:   
 
-### `npm test`
+We started with our User Experience by getting a users needs,wants,problems and fustrations with a simple google forms questionaire that then lead us to our Flow and SiteMap
+## Flow
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![alt text](./src/components/images/UserFlow.png "Logo Title Text 1")
+## Site Map
+---
+![alt text](./src/components/images/SiteMap.png "Logo Title Text 1")
+   
 
-### `npm run build`
+We then begain to build the low fedelity wireframes taking carefull consideration as to what our user needed from the site
+with __Stories__
+## User stories
+![alt text](./src/components/images/userStories.png "Logo Title Text 1")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After a long and arduous User Experience we then began to build our low fedilty wire frames keeping our own need's third to the teams needs and teams needs secound to the customers...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](./src/components/images/lowFed.png "Logo Title Text 1")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ew!..🤢   
+To then make our Mid Fidelity   
+Ahh!...😍
+![alt text](./src/components/images/midFed.png "Logo Title Text 1")
+And finally our high Fidelity
+![alt text](./src/components/images/lowFed.png "Logo Title Text 1")
 
-### `npm run eject`
+We then begain the strenuous process of breaking down our M.V.P "Minimum Viable Product which we cut out the unneeded content to give the user exactly what they needed which we then added onto at each point.
+![alt text](./src/components/images/MVP.png "Logo Title Text 1")
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Next was our task allassian problem break down handing each task using tickets chosen
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![alt text](./src/components/images/problems.png "Logo Title Text 1")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![alt text](./src/components/images/groProImg.png "Logo Title Text 1")
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![alt text](./src/components/images/popUpImgReadMe.png "Logo Title Text 1")
