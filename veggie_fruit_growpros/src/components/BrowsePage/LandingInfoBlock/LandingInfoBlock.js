@@ -1,4 +1,5 @@
 import "./LandingInfoBlock.css";
+import React from "react";
 
 const LandingInfoBlock = ({ infoHead, infoBody }) => {
   let arr1 = [
@@ -10,9 +11,9 @@ const LandingInfoBlock = ({ infoHead, infoBody }) => {
   infoBody === true ? (infoBody = arr1[0]) : (infoBody = arr1[1]);
 
   return (
-    <section className="landing-info">
+    <section className="landing-info" data-testid="landing-container">
       <div className="landing-info-text-container">
-        <h2 className="landing-info-title">{infoHead}</h2>
+        <h2 className="landing-info-title"> {infoHead}</h2>
         <p className="landing-info-text">{infoBody}</p>
       </div>
     </section>
@@ -20,7 +21,3 @@ const LandingInfoBlock = ({ infoHead, infoBody }) => {
 };
 
 export default LandingInfoBlock;
-
-module.exports = {
-  LandingInfoBlock,
-};

@@ -1,14 +1,19 @@
-const { LandingInfoBlock } = require("./LandingInfoBlock");
-// import LandingInfoBlock from "./LandingInfoBlock";
+import React from "react";
+import { render } from "@testing-library/react";
+import "@testing-library/jest-dom";
+import LandingInfoBlock from "./";
 
-test("when info body is true then info body should be set to first item in array", () => {
-  // ARRANGE
-  const actualInfoBody = `Do you fancy learning how to grow your own fruitand vegetables? \nWe are here to help you get into growing some crops!\nWhether you're a complete beginner or your fingers are green, please check out our easy to follow introductions to growing your own fruit and vegetables.`;
-  // const testInfoBody = true;
-  const expected = true;
+const testProps = {
+  infoHead: "title-one",
+  InfoBody: [
+    `Do you fancy learning how to grow your own fruitand vegetables? \nWe are here to help you get into growing some crops!\nWhether you're a complete beginner or your fingers are green, please check out our easy to follow introductions to growing your own fruit and vegetables.`,
 
-  // ACT
-  const actual = LandingInfoBlock(actualInfoBody);
-  // ASSESS
-  expect(actual).toEqual(expected);
+    "Dont want to water your plants today. \n 'plants under the Weather', Why not check our weather forcast app to spy for rain ;) ",
+  ],
+};
+
+test.only("if landing info block component is being rendered correctly in its container", () => {
+  const { getByTestId } = render(<LandingInfoBlock {...testProps} />);
+  const section = getByTestId("landing-container");
+  expect(section).toBeInTheDocument();
 });
