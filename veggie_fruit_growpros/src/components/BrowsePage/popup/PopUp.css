@@ -1,0 +1,229 @@
+*{
+  margin:0%;
+  padding: 0%;
+  text-decoration: none;
+}
+
+a {
+  color: #6cad55;
+}
+
+a:hover {
+  color: #548642;
+}
+
+.PopUpH2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.PopUpH3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.PopUpShell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+  height: 92vh;
+  width: 1200px;
+  background-color: #2a2a2ae5;
+}
+
+.ClosePopUp {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+}
+
+.ClosePopUp--button {
+  height: 44px;
+  width: 44px;
+  font-size: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  background-color: #2a2a2a;
+  transition-duration: 0.3s;
+}
+
+.ClosePopUp--button:hover {
+  color: #2a2a2a;
+  background-color: white;
+  transition-duration: 0.3s;
+}
+
+.PopUpBox {
+  width: 70%;
+  height: 90%;
+  background: white;
+  overflow: auto;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.PopUpHeaderImg {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.PopUpTitle {
+  text-align: center;
+  margin: 40px 40px 20px 40px;
+  font-size: 3.5rem;
+}
+
+.popUpDescription {
+  text-align: left;
+  margin: 0 50px 25px 50px;
+  background-color: white;
+}
+
+.PopUP-Ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px 50px 40px 50px;
+}
+
+.PopUP-Ratings h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.PopUP-Ratings li {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.PopUP-Ratings h3 {
+  text-align: left;
+  width:110px;
+}
+
+.PopUP-Ratings img {
+  width: 90px;
+}
+
+.PopUp-Ref {
+  padding: 60px 40px 60px 40px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.InstructionsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px 50px 40px 50px;
+}
+
+.InstructionsText {
+  width: 53%;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.InstructionsText-RightColumn {
+  width: 53%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.InstructionsImage {
+  width: 42%;
+}
+
+.InstructionsImage img {
+  width: 100%;
+}
+
+.lightGreen-bg {
+  background-color: #6cad5515;
+}
+
+/* Scrollbar styling */
+.PopUpBox::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+.PopUpBox::-webkit-scrollbar-track {
+  background: #2a2a2a;        /* color of the tracking area */
+}
+
+.PopUpBox::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #2a2a2a;  /* creates padding around scroll thumb */
+}
+
+@media screen and (min-width: 601px) and (max-width: 1199px){
+  .PopUpShell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+    height: 92vh;
+    width: 100vw;
+    background-color: #2a2a2ae5;
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .PopUpShell{
+    width: 100vw;
+    z-index: 10;
+    justify-content: space-between;
+  }
+  .PopUpBox{
+    width: 100%;
+    height: 100%;
+    background: white;
+    overflow: auto;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .ClosePopUp{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .InstructionsSection{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .InstructionsSection::nth-child(2){
+    flex-direction: column-reverse;
+  }
+
+  .InstructionsText{
+    width: 95%;
+  }
+  .InstructionsImage{
+    width: 96%;
+  }
+}

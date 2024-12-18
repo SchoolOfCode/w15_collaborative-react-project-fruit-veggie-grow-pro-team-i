@@ -1,0 +1,146 @@
+
+.QPage {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background:url(/src/components/images/vegimageplaceholder.jpg);
+    background-size: cover;
+}
+
+.QMain {
+    /* this is the main container for the questionnaire */
+    height: 80%;
+    width: 90%;
+    max-height: 600px;
+    max-width: 900px;
+    background-color: white;
+    border: thin solid black;
+}
+
+.QHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+    font-size: 1.6rem;
+    background-image: linear-gradient(90deg,#ffffff  0%, #bae6b9 100%);
+
+    border-bottom: thin solid black;
+    
+}
+
+.QBody {
+    display: flex;
+    height: 75%;
+    width: 100%;
+}
+
+.QInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 75%;
+    background-image: linear-gradient(180deg, #fff, #f4f5f9);
+}
+.QInputBoxsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    border: none;
+
+}
+.QInputBoxsContainer-InputBoxs{
+    width: 50%;
+    height: 24px;
+    text-align: center;
+}
+.QButtonContainer{
+    align-self: flex-end;
+    
+}
+.QButtonContainer button{
+    margin-right: 20px;
+    height: 44px;
+    width: 54px;
+}
+.QImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    
+}
+
+.QImage img {
+    height: 80%;
+    width: 70%;
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1199px){
+
+    .QPage {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 91vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        background:url(/src/components/images/vegimageplaceholder.jpg);
+        background-size: cover;
+    }
+    
+    .QMain {
+        /* this is the main container for the questionnaire */
+        height: 80%;
+        width: 90%;
+        max-height: 600px;
+        max-width: 900px;
+        background-color: white;
+        border: thin solid black;
+    }
+    
+  
+  }
+  @media only screen and (max-width: 600px) {
+
+    .QPage {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 91vh;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        background:url(/src/components/images/vegimageplaceholder.jpg);
+        background-size: cover;
+    }
+    
+    .QMain {
+        /* this is the main container for the questionnaire */
+        height: 80%;
+        width: 90%;
+        max-height: 600px;
+        max-width: 100%;
+        background-color: white;
+        border: thin solid black;
+    }
+    
+    
+  }
